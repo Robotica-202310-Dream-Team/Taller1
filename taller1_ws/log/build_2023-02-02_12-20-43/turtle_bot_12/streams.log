@@ -1,0 +1,35 @@
+[0.544s] Invoking command in '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/src/turtle_bot_12': PYTHONPATH=/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/prefix_override:/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtle_bot_12 build --build-base /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build install --record /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/install.log --single-version-externally-managed
+[0.750s] running egg_info
+[0.751s] creating ../../build/turtle_bot_12/turtle_bot_12.egg-info
+[0.751s] writing ../../build/turtle_bot_12/turtle_bot_12.egg-info/PKG-INFO
+[0.751s] writing dependency_links to ../../build/turtle_bot_12/turtle_bot_12.egg-info/dependency_links.txt
+[0.751s] writing entry points to ../../build/turtle_bot_12/turtle_bot_12.egg-info/entry_points.txt
+[0.751s] writing requirements to ../../build/turtle_bot_12/turtle_bot_12.egg-info/requires.txt
+[0.751s] writing top-level names to ../../build/turtle_bot_12/turtle_bot_12.egg-info/top_level.txt
+[0.751s] writing manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'
+[0.753s] reading manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'
+[0.753s] writing manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'
+[0.754s] running build
+[0.754s] running build_py
+[0.754s] creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build
+[0.754s] creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build/lib
+[0.754s] creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build/lib/turtle_bot_12
+[0.754s] copying turtle_bot_12/__init__.py -> /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build/lib/turtle_bot_12
+[0.754s] running install
+[0.754s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.754s]   warnings.warn(
+[0.755s] running install_lib
+[0.755s] creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12
+[0.755s] copying /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build/lib/turtle_bot_12/__init__.py -> /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12
+[0.756s] byte-compiling /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12/__init__.py to __init__.cpython-310.pyc
+[0.756s] running install_data
+[0.757s] creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/share/ament_index
+[0.757s] creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/share/ament_index/resource_index
+[0.757s] creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/share/ament_index/resource_index/packages
+[0.757s] copying resource/turtle_bot_12 -> /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/share/ament_index/resource_index/packages
+[0.757s] copying package.xml -> /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/share/turtle_bot_12
+[0.757s] running install_egg_info
+[0.758s] Copying ../../build/turtle_bot_12/turtle_bot_12.egg-info to /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12-0.0.0-py3.10.egg-info
+[0.759s] running install_scripts
+[0.777s] writing list of installed files to '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/install.log'
+[0.799s] Invoked command in '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/src/turtle_bot_12' returned '0': PYTHONPATH=/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/prefix_override:/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtle_bot_12 build --build-base /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build install --record /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/install.log --single-version-externally-managed

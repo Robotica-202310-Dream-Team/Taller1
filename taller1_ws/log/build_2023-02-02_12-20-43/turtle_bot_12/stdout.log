@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/turtle_bot_12/turtle_bot_12.egg-info
+writing ../../build/turtle_bot_12/turtle_bot_12.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtle_bot_12/turtle_bot_12.egg-info/dependency_links.txt
+writing entry points to ../../build/turtle_bot_12/turtle_bot_12.egg-info/entry_points.txt
+writing requirements to ../../build/turtle_bot_12/turtle_bot_12.egg-info/requires.txt
+writing top-level names to ../../build/turtle_bot_12/turtle_bot_12.egg-info/top_level.txt
+writing manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'
+reading manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build
+creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build/lib
+creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build/lib/turtle_bot_12
+copying turtle_bot_12/__init__.py -> /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build/lib/turtle_bot_12
+running install
+running install_lib
+creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12
+copying /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/build/lib/turtle_bot_12/__init__.py -> /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12
+byte-compiling /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/share/ament_index
+creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/share/ament_index/resource_index
+creating /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/share/ament_index/resource_index/packages
+copying resource/turtle_bot_12 -> /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/share/ament_index/resource_index/packages
+copying package.xml -> /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/share/turtle_bot_12
+running install_egg_info
+Copying ../../build/turtle_bot_12/turtle_bot_12.egg-info to /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_12/install.log'
