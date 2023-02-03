@@ -14,12 +14,13 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='sebastian',
-    maintainer_email='sebastian@todo.todo',
+    maintainer_email='s.guayacan@uniandes.edu.co',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'turtle_bot_interface = turtle_bot_12.turtle_bot_interface:main'
         ],
     },
 )
