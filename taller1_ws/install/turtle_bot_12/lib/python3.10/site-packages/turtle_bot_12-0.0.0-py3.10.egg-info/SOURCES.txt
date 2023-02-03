@@ -14,3 +14,5 @@ test/test_flake8.py
 test/test_pep257.py
 turtle_bot_12/__init__.py
 turtle_bot_12/turtle_bot_interface.py
+turtle_bot_12/turtle_bot_player.py
+turtle_bot_12/turtle_bot_teleop.py
