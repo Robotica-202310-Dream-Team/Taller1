@@ -23,72 +23,21 @@ pos_x_total = [0]
 pos_y_total = [0]
 mapa_actual = 255*np.ones((500,500),dtype=np.uint8) # imagen en blanco
 height,width = mapa_actual.shape
-    
-"""
-def main(args=None):
-    print('Hi from turtle_bot_12. This node allows us to visualize the real time position of the Turtlebot ')
+########################################################################################################################
 
-    mapa_actual = 255*np.ones((500,500),dtype=np.uint8) # imagen en blanco
-    height,width = mapa_actual.shape
-    rclpy.init(args=args)
-    minimal_subscriber = MinimalSubscriber()
-    print ("minimal_subscriber")
-    rclpy.spin(minimal_subscriber)
-
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
-    #minimal_subscriber.destroy_node()
-    #rclpy.shutdown()
-    while not rclpy.is_shutdown():
-        print ("not shutdown")
-        poses_new = pixels((pos_x,pos_y), height, width)
-        pos_x_total.append(poses_new[0])
-        pos_y_total.append(poses_new[1])
-        for i in range(len(pos_y_total)):
-            print (f"x = {pos_x_total[i]} y = {pos_y_total[i]}")
-            image = cv2.circle(mapa_actual, (pos_x_total[i],pos_y_total[i]), radius=5, color=(0, 0, 255), thickness=-1) #color=(Blue,Green,Red)
-            cv2.imshow('imagen',image)
-            cv2.waitKey(1)
-
-
-        #bridge = CvBridge()
-        #try:
-        #    image_message = bridge.cv2_to_imgmsg(mapa_actual, encoding= 'passthrough')
-        #    img_pub.publish(image_message)
-        #except CvBridgeError as e:
-        #    print(e)
-
-
-
-
-"""
-"""
-        bridge = CvBridge()
-        try:
-            image_message = bridge.cv2_to_imgmsg(mapa_actual, encoding= 'passthrough')
-            img_pub.publish(image_message)
-        except CvBridgeError as e:
-            print(e)
-
-
-
-
-"""
-
-class MinimalSubscriber(Node):
-    global pos_x, pos_y
-    global pos_x_total, pos_y_total
-    global height, width
-
+class MinimalPublisher_suscriber(Node):
     def __init__(self):
         super().__init__('turtle_bot_interface')
+        self.publisher_ = self.create_publisher(String, 'turtle_bot_image', 10)
+        timer_period = 0.5  # seconds
         self.subscription = self.create_subscription(
             Twist,
             'turtlebot_position',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.i = 0
 
     def listener_callback(self, msg):
         pos_x = msg.linear.x
@@ -100,14 +49,55 @@ class MinimalSubscriber(Node):
             pos_y_total.append(poses_new[1])
             for i in range(len(pos_y_total)):
                 print (f"x = {pos_x_total[i]} y = {pos_y_total[i]}")
-                image = cv2.circle(mapa_actual, (pos_x_total[i],pos_y_total[i]), radius=5, color=(0, 0, 255), thickness=-1) #color=(Blue,Green,Red)
-                cv2.imshow('imagen',image)
-                cv2.waitKey(1)
-            
+                
+                #image = cv2.circle(mapa_actual, (pos_x_total[i],pos_y_total[i]), radius=5, color=(0, 0, 255), thickness=-1) #color=(Blue,Green,Red)
+                #cv2.imshow('imagen',image)
+                #cv2.waitKey(1)
+
+
+    def timer_callback(self):
+        msg = String()
+        msg.data = 'X = ' + str(pos_x) +'Y = ' + str(pos_y)  % self.i
+        self.publisher_.publish(msg)
+        self.get_logger().info('Publishing: "%s"' % msg.data)
+        self.i += 1
+
+        
+class MinimalSubscriber(Node):
+    global pos_x, pos_y
+    global pos_x_total, pos_y_total
+    global height, width
+
+    def __init__(self):
+        self.subscription = self.create_subscription(
+            Twist,
+            'turtlebot_position',
+            self.listener_callback,
+            10)
+        self.subscription  # prevent unused variable warning
+        
+        
+
+    def listener_callback(self, msg):
+        pos_x = msg.linear.x
+        pos_y = msg.linear.y
+        while True:
+            print ("not shutdown")
+            poses_new = pixels((pos_x,pos_y), height, width)
+            pos_x_total.append(poses_new[0])
+            pos_y_total.append(poses_new[1])
+            for i in range(len(pos_y_total)):
+                print (f"x = {pos_x_total[i]} y = {pos_y_total[i]}")
+                #minimal_publisher = MinimalPublisher()
+                #image = cv2.circle(mapa_actual, (pos_x_total[i],pos_y_total[i]), radius=5, color=(0, 0, 255), thickness=-1) #color=(Blue,Green,Red)
+                #cv2.imshow('imagen',image)
+                #cv2.waitKey(1)
+
+#######################################################################################################################       
 
 def pixels (coord,height, width): # Pasar de metros a pixeles 
-    x_len = 10 # metros
-    y_len = 10 # metros
+    x_len = 5 # metros
+    y_len = 5 # metros
     x_center = width//2
     y_center = height//2
     x =  round((coord[0]*width // x_len ) +  x_center) 
@@ -117,10 +107,10 @@ def pixels (coord,height, width): # Pasar de metros a pixeles
 def main(args=None):
     print('Hi from turtle_bot_12. This node allows us to visualize the real time position of the Turtlebot ')
     rclpy.init(args=args)
-    minimal_subscriber = MinimalSubscriber()
-    print ("minimal_subscriber")
-    rclpy.spin(minimal_subscriber)
-    minimal_subscriber.destroy_node()
+    minimal_subscriber_publisher = MinimalPublisher_suscriber()
+    print ("minimal_subscriber_publisher")
+    rclpy.spin(minimal_subscriber_publisher)
+    minimal_subscriber_publisher.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
