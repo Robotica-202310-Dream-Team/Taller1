@@ -26,6 +26,9 @@ height,width = mapa_actual.shape
 ########################################################################################################################
 
 class MinimalPublisher_suscriber(Node):
+    global pos_x, pos_y
+    global pos_x_total, pos_y_total
+    global height, width
     def __init__(self):
         super().__init__('turtle_bot_interface')
         self.publisher_ = self.create_publisher(String, 'turtle_bot_image', 10)
@@ -54,15 +57,14 @@ class MinimalPublisher_suscriber(Node):
                 #cv2.imshow('imagen',image)
                 #cv2.waitKey(1)
 
-
     def timer_callback(self):
         msg = String()
-        msg.data = 'X = ' + str(pos_x) +'Y = ' + str(pos_y)  % self.i
+        msg.data = 'X = ' + str(pos_x) +'Y = ' + str(pos_y) 
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
-        self.i += 1
-
         
+
+"""       
 class MinimalSubscriber(Node):
     global pos_x, pos_y
     global pos_x_total, pos_y_total
@@ -75,8 +77,6 @@ class MinimalSubscriber(Node):
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
-        
-        
 
     def listener_callback(self, msg):
         pos_x = msg.linear.x
@@ -92,6 +92,7 @@ class MinimalSubscriber(Node):
                 #image = cv2.circle(mapa_actual, (pos_x_total[i],pos_y_total[i]), radius=5, color=(0, 0, 255), thickness=-1) #color=(Blue,Green,Red)
                 #cv2.imshow('imagen',image)
                 #cv2.waitKey(1)
+                """
 
 #######################################################################################################################       
 
@@ -108,6 +109,7 @@ def main(args=None):
     print('Hi from turtle_bot_12. This node allows us to visualize the real time position of the Turtlebot ')
     rclpy.init(args=args)
     minimal_subscriber_publisher = MinimalPublisher_suscriber()
+    minimal_subscriber_publisher.timer_callback()
     print ("minimal_subscriber_publisher")
     rclpy.spin(minimal_subscriber_publisher)
     minimal_subscriber_publisher.destroy_node()
