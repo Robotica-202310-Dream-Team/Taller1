@@ -9,6 +9,8 @@ from cv_bridge import CvBridge, CvBridgeError
 import numpy as np
 import turtle
 import tkinter as tk
+from tkinter import filedialog
+from pathlib import Path
 
 # Este codigo se suscribe al topico con mensaje tipo Twist de posicon
 # y grafica en tiempo real la posición del robot en un topico con 
@@ -66,53 +68,51 @@ class MinimalPublisher_suscriber(Node):
         
 
 #######################################################################################################################       
-
 class Canvas:
     def __init__(self):
-        
         root = tk.Tk()
         root.title("Turtle_bot_interface Parlington")
-        self.canvas = tk.Canvas(master = root, width = 600, height = 600)
+        self.canvas = tk.Canvas(master = root,highlightbackground="#351f54", width = 600, height = 600)
         self.t = turtle.RawTurtle(self.canvas)
         self.canvas.pack()
         self.t.pencolor("black")
-        
-
         self.nick = tk.StringVar()
-        
-        tk.Label(root, text="Inserte su nick y pulse en Listo!").pack(side = tk.LEFT)
-        self.insert_nick = tk.Entry(root, width=30, textvariable=self.nick).pack(side = tk.LEFT)
-        tk.Button(master = root, text = "Ejemplo de dibujo", command = lambda:self.mover([50,50])).pack(side = tk.LEFT)
-        tk.Button(master = root, text = "Guardar Imagen", command=self.boton2).pack(side = tk.LEFT)
-        tk.Label(master = root, text = "Label").pack(side = tk.LEFT)
+        tk.Button(master = root, background="#c35bcf" , text = "Graficar",font="helvetica 10", command = lambda:self.boton1([50,50])).pack(side = tk.LEFT)
+        tk.Label(root,background="#c35bcf",  text="Guardar como:",font="helvetica 10").pack(side = tk.LEFT,)
+        self.insert_nick = tk.Entry(root, background="#a5e1f2", width=20,  textvariable=self.nick).pack(side = tk.LEFT)
+        tk.Button(master = root, background="#c35bcf", text = "Guardar Imagen",font="helvetica 10", command=self.boton2).pack(side=tk.LEFT)
+        tk.Button(master = root, background="#c35bcf", text = "Funcionalidad 3",font="helvetica 10", command=self.boton3).pack(side = tk.LEFT)
+        tk.Button(master = root, background="#c35bcf", text = "Funcionalidad 4",font="helvetica 10", command=self.boton4).pack(side = tk.LEFT)
+        tk.Button(master = root, background="#c35bcf", text = "Funcioanlidad 5",font="helvetica 10", command=self.boton5).pack(side = tk.LEFT)
+        #tk.Label(master = root, text = "Label").pack(side = tk.LEFT)
         #minimal_subscriber_publisher = MinimalPublisher_suscriber()
         print ("minimal_subscriber_publisher")
-        
         #rclpy.spin(minimal_subscriber_publisher)
         #minimal_subscriber_publisher.destroy_node()
         #rclpy.shutdown()
         root.mainloop()
 
-    def mover(self,pose_new):
+    def boton1(self,pose_new):
         #t.forward(1)
         self.t.pencolor("red")
         self.t.pensize(2)
         self.t.speed(0)
         self.t.goto(pose_new[0],pose_new[1])
-    def boton1(self):
-        pass
+    
     def boton2 (self):
         print ("Boton2")
-        #img=np.array(self.canvas.canvasx)
-        #ImageTk.PhotoImage(Image.open(img))
-        scriptDir = os.path.dirname(__file__)
+        scriptDir = filedialog.askdirectory()
         name =self.nick.get()
         ruta = scriptDir + "/"+name
         print (ruta)
         self.canvas.postscript(file=ruta, colormode='color')
-
+    def boton3(self):
+        print ("funcionalidad 3")
+    def boton4(self):
+        print ("funcionalidad 4")
+    def boton5(self):
+        print ("funcionalidad 5")
         #cv2.imwrite( ruta,img)
-
 
 
 def main(args=None):
