@@ -1,1 +1,1 @@
-geometry_msgs:pynput:rclpy:std_msgs
+example_interfaces:geometry_msgs:rclpy:std_msgs

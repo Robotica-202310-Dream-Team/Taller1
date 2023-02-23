@@ -17,6 +17,7 @@ class Turtle_bot_teleop(Node):
         self.velAngular = float(input("Ingrese la velocidad angular: "))
         self.frec = 10
         self.publisher = self.create_publisher(Twist, 'turtlebot_cmdVel', self.frec)
+        self.infoGuardar = self.create_subscription(String, 'info_guardar_txt', self.listener_info_txt, self.frec)
         self.twist = Twist()
         self.twist.linear.y = 0.0
         self.twist.linear.z = 0.0
@@ -25,29 +26,31 @@ class Turtle_bot_teleop(Node):
         listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
         listener.start()
 
-        self.RECORRIDO = '/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt'
-        self.archivo = open(self.RECORRIDO,"w")
+        self.pathTXT = '/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt'
+        self.archivo = open(self.pathTXT,"w")
+        self.guardar = True
         self.decision = False
-        self.tiempoInicialLetraEspichada = 0
-        self.tiempoFinalLetraEspichada = 0
         self.tiempoInicialLetraNoEspichada = self.get_clock().now().to_msg().sec
         self.tiempoFinalLetraNoEspichada = 0
         self.diferencia = 0 
+        self.termino = True
         
          
 
     # -----------------------------------------------------KEYBOARD THREAD--------------------------------------------------------------
 
     def on_press(self,key):
-        try:
-            print('alphanumeric key {0} pressed'.format(key.char))
-            if key.char == 'w' or key.char == 's' or key.char == 'a' or key.char == 'd':
-                self.archivo = open(self.RECORRIDO,"a")
+        try:    
+            self.archivo = open(self.pathTXT,"a")
+            if self.termino == False:
                 self.tiempoFinalLetraNoEspichada = self.get_clock().now().to_msg().sec
                 self.diferenciaLetraNoEspichada = abs(self.tiempoInicialLetraNoEspichada - self.tiempoFinalLetraNoEspichada)
-                #for i in range(0, self.frec*self.diferenciaLetraNoEspichada):
-                self.archivo.write("k" + "\n")
-                self.tiempoInicialLetraEspichada = self.get_clock().now().to_msg().sec
+                self.termino = True
+                self.archivo.write(("k" + "\n")*(self.diferenciaLetraNoEspichada*self.frec))
+            if key.char == 'w' or key.char == 's' or key.char == 'a' or key.char == 'd':
+                if self.guardar == True:
+                    self.archivo.write(key.char + "\n")
+            print('alphanumeric key {0} pressed'.format(key.char))
             if key.char =='w':
                 self.twist.linear.x = self.velLineal
                 self.twist.angular.z = 0.0
@@ -70,19 +73,13 @@ class Turtle_bot_teleop(Node):
 
     def on_release(self,key):
         try:
-            if key.char == 'w' or key.char == 's' or key.char == 'a' or key.char == 'd':
-                self.archivo = open(self.RECORRIDO,"a")
-                self.tiempoFinalLetraEspichada = self.get_clock().now().to_msg().sec
-                self.diferenciaLetraEspichada = abs(self.tiempoInicialLetraEspichada - self.tiempoFinalLetraEspichada)
-                #for i in range(0, self.frec*int(self.diferenciaLetraEspichada)):
-                self.archivo.write(key.char + "\n")
-                print("ABC")
-                self.tiempoInicialLetraNoEspichada = self.get_clock().now().to_msg().sec
-                self.archivo.close()
+            self.termino = False        
+            self.tiempoInicialLetraNoEspichada = self.get_clock().now().to_msg().sec       
             print('{0} released'.format(key))
             self.twist.linear.x = 0.0
             self.twist.angular.z = 0.0
             self.publisher.publish(self.twist)
+            self.archivo.close()
             if key == keyboard.Key.esc:
                 return False
         except AttributeError:
@@ -90,7 +87,18 @@ class Turtle_bot_teleop(Node):
                 return False
     
 
+        
+    def listener_info_txt(self, msg):
+        mensaje = str(msg.data)
+        lista = mensaje.split(",")
+        if lista[0] == "si":
+            self.guardar = True
+            self.pathTXT = lista[1]
+        
+
 # --------------------------------------------------------MAIN-----------------------------------------------------------
+
+
 
 def main(args=None):
     rclpy.init(args=args)

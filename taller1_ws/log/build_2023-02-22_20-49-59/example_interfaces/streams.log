@@ -1,0 +1,55 @@
+[0.138s] Invoking command in '/home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios:/opt/ros/humble /usr/bin/cmake --build /home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces -- -j4 -l4
+[0.447s] [  1%] Built target example_interfaces__cpp
+[0.456s] [ 12%] Built target example_interfaces__rosidl_generator_c
+[0.536s] [ 12%] Built target ament_cmake_python_copy_example_interfaces
+[0.765s] [ 25%] Built target example_interfaces__rosidl_typesupport_introspection_cpp
+[0.765s] [ 37%] Built target example_interfaces__rosidl_typesupport_cpp
+[0.809s] [ 51%] Built target example_interfaces__rosidl_typesupport_fastrtps_c
+[0.809s] [ 62%] Built target example_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.985s] [ 75%] Built target example_interfaces__rosidl_typesupport_introspection_c
+[0.997s] [ 87%] Built target example_interfaces__rosidl_typesupport_c
+[1.067s] [ 87%] Built target example_interfaces
+[1.100s] [ 87%] Built target example_interfaces__py
+[1.236s] [ 99%] Built target example_interfaces__rosidl_generator_py
+[1.417s] [ 99%] Built target example_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.455s] running egg_info
+[1.458s] writing example_interfaces.egg-info/PKG-INFO
+[1.458s] writing dependency_links to example_interfaces.egg-info/dependency_links.txt
+[1.458s] writing top-level names to example_interfaces.egg-info/top_level.txt
+[1.462s] reading manifest file 'example_interfaces.egg-info/SOURCES.txt'
+[1.465s] writing manifest file 'example_interfaces.egg-info/SOURCES.txt'
+[1.503s] [ 99%] Built target example_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.520s] [100%] Built target example_interfaces__rosidl_typesupport_c__pyext
+[1.537s] [100%] Built target ament_cmake_python_build_example_interfaces_egg
+[1.581s] Invoked command in '/home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios:/opt/ros/humble /usr/bin/cmake --build /home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces -- -j4 -l4
+[3.624s] Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 67, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 633, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1860, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_cmake/build.py", line 59, in build
+    rc = await extension.build(
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/build.py", line 110, in build
+    if await has_target(args.build_base, 'install'):
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 57, in has_target
+    return target in await get_makefile_targets(path)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 77, in get_makefile_targets
+    output = await check_output([
+  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 128, in check_output
+    assert not rc, f'Expected {args} to pass: {stderr_data}'
+AssertionError: Expected ['/usr/bin/cmake', '--build', '/home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces', '--target', 'help'] to pass: 

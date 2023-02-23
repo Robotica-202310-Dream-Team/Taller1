@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info
+writing ../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/PKG-INFO
+writing dependency_links to ../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/dependency_links.txt
+writing entry points to ../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/entry_points.txt
+writing requirements to ../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/requires.txt
+writing top-level names to ../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/top_level.txt
+writing manifest file '../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/SOURCES.txt'
+reading manifest file '../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/SOURCES.txt'
+writing manifest file '../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robotica/Documents/Taller1/taller1_ws/build/paquete_scr_servicios/build
+creating /home/robotica/Documents/Taller1/taller1_ws/build/paquete_scr_servicios/build/lib
+creating /home/robotica/Documents/Taller1/taller1_ws/build/paquete_scr_servicios/build/lib/paquete_scr_servicios
+copying paquete_scr_servicios/__init__.py -> /home/robotica/Documents/Taller1/taller1_ws/build/paquete_scr_servicios/build/lib/paquete_scr_servicios
+running install
+running install_lib
+creating /home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios/lib/python3.10/site-packages/paquete_scr_servicios
+copying /home/robotica/Documents/Taller1/taller1_ws/build/paquete_scr_servicios/build/lib/paquete_scr_servicios/__init__.py -> /home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios/lib/python3.10/site-packages/paquete_scr_servicios
+byte-compiling /home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios/lib/python3.10/site-packages/paquete_scr_servicios/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios/share/ament_index
+creating /home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios/share/ament_index/resource_index
+creating /home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios/share/ament_index/resource_index/packages
+copying resource/paquete_scr_servicios -> /home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios/share/ament_index/resource_index/packages
+copying package.xml -> /home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios/share/paquete_scr_servicios
+running install_egg_info
+Copying ../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info to /home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios/lib/python3.10/site-packages/paquete_scr_servicios-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/robotica/Documents/Taller1/taller1_ws/build/paquete_scr_servicios/install.log'

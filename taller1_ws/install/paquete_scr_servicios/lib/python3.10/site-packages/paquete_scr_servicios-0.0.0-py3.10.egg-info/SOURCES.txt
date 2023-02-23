@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/PKG-INFO
+../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/SOURCES.txt
+../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/dependency_links.txt
+../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/entry_points.txt
+../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/requires.txt
+../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/top_level.txt
+../../build/paquete_scr_servicios/paquete_scr_servicios.egg-info/zip-safe
+paquete_scr_servicios/__init__.py
+resource/paquete_scr_servicios
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
