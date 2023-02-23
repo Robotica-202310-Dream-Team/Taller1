@@ -35,7 +35,7 @@ class MinimalPublisher_suscriber(Node):
         self.pos_y = 0
         self.pos_x_total = [0]
         self.pos_y_total = [0]
-        self.poses_new  =    [0,0]
+        self.poses_new  = [0,0]
         super().__init__('turtle_bot_interface')
         #self.publisher_ = self.create_publisher(String, 'turtle_bot_image', 10) Publica un string
         self.publisher_ = self.create_publisher(Image, 'turtle_bot_image', 10) #publica una imagen
@@ -43,11 +43,7 @@ class MinimalPublisher_suscriber(Node):
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
             self.req = SetBool.Request()
-        self.subscription = self.create_subscription(
-            Twist,
-            'turtlebot_position',
-            self.subscriber,
-            1)
+        self.subscription = self.create_subscription(Twist,'turtlebot_position',self.subscriber,1)
         self.subscription  # prevent unused variable warning
         self.br = CvBridge()
         self.mapa_base =  255*np.ones((500,500),dtype=np.uint8)

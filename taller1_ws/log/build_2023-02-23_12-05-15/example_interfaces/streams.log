@@ -1,0 +1,9 @@
+[0.119s] Invoking command in '/home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios:/opt/ros/humble /usr/bin/cmake --build /home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces -- -j5 -l5
+[0.387s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_generator_c[0m
+[0.398s] failed to create symbolic link '/home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces/ament_cmake_python/example_interfaces/example_interfaces' because existing path cannot be removed: Is a directory
+[0.400s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_example_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_example_interfaces] Error 1
+[0.405s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_example_interfaces.dir/all] Error 2
+[0.405s] gmake[1]: *** Waiting for unfinished jobs....
+[0.437s] [  0%] Built target example_interfaces__cpp
+[0.473s] [ 12%] Built target example_interfaces__rosidl_generator_c
+[0.498s] gmake: *** [Makefile:146: all] Error 2

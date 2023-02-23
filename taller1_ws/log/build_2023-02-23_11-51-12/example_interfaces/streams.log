@@ -1,0 +1,23 @@
+[0.130s] Invoking command in '/home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios:/opt/ros/humble /usr/bin/cmake --build /home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces -- -j5 -l5
+[0.584s] [  0%] Built target example_interfaces__cpp
+[0.745s] [  0%] Built target ament_cmake_python_copy_example_interfaces
+[0.747s] [ 12%] Built target example_interfaces__rosidl_generator_c
+[1.015s] [ 30%] Built target example_interfaces__rosidl_typesupport_cpp
+[1.062s] [ 36%] Built target example_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.076s] [ 49%] Built target example_interfaces__rosidl_typesupport_introspection_cpp
+[1.159s] [ 62%] Built target example_interfaces__rosidl_typesupport_fastrtps_c
+[1.210s] [ 74%] Built target example_interfaces__rosidl_typesupport_c
+[1.319s] [ 87%] Built target example_interfaces__rosidl_typesupport_introspection_c
+[1.398s] [ 87%] Built target example_interfaces
+[1.492s] [ 87%] Built target example_interfaces__py
+[1.620s] [ 99%] Built target example_interfaces__rosidl_generator_py
+[1.731s] [ 99%] Built target example_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.801s] [100%] Built target example_interfaces__rosidl_typesupport_c__pyext
+[1.805s] running egg_info
+[1.807s] writing example_interfaces.egg-info/PKG-INFO
+[1.809s] writing dependency_links to example_interfaces.egg-info/dependency_links.txt
+[1.810s] writing top-level names to example_interfaces.egg-info/top_level.txt
+[1.817s] [100%] Built target example_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.821s] reading manifest file 'example_interfaces.egg-info/SOURCES.txt'
+[1.823s] writing manifest file 'example_interfaces.egg-info/SOURCES.txt'
+[1.904s] [100%] Built target ament_cmake_python_build_example_interfaces_egg

@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-from example_interfaces.srv import SetBool
+from turtle_bot_srv_12.srv import ReadTxt
 import time
 
 class Turtle_bot_player(Node):
@@ -9,10 +9,10 @@ class Turtle_bot_player(Node):
     def __init__(self):
         super().__init__('turtle_bot_player')
         self.publisher = self.create_publisher(Twist, 'turtlebot_cmdVel', 10)
-        self.srv = self.create_service(SetBool, 'read_txt', self.read_txt_callback)
+        self.srv = self.create_service(ReadTxt, 'read_txt', self.read_txt_callback)
         print('listo')
-        self.velLineal = 70.0
-        self.velAngular = 80.0
+        self.velLineal = 10.0
+        self.velAngular = 20.0
         self.twist = Twist()
         self.twist.linear.y = 0.0
         self.twist.linear.z = 0.0

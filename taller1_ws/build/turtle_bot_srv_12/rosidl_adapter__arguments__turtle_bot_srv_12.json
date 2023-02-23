@@ -1,0 +1,7 @@
+{
+  "package_name": "turtle_bot_srv_12",
+  "non_idl_tuples": [
+    "/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_srv_12:msg/String.msg",
+    "/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_srv_12:srv/ReadTxt.srv"
+  ]
+}

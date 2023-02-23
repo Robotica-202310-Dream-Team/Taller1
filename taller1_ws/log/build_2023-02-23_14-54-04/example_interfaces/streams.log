@@ -1,0 +1,15 @@
+[0.142s] Invoking command in '/home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios:/opt/ros/humble /usr/bin/cmake --build /home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces -- -j5 -l5
+[1.293s] [  0%] Built target example_interfaces__cpp
+[1.293s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_cpp[0m
+[1.293s] [ 12%] Built target example_interfaces__rosidl_generator_c
+[1.293s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.293s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.293s] [ 24%] Built target example_interfaces__rosidl_typesupport_cpp
+[1.294s] failed to create symbolic link '/home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces/ament_cmake_python/example_interfaces/example_interfaces' because existing path cannot be removed: Is a directory
+[1.294s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_example_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_example_interfaces] Error 1
+[1.294s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_example_interfaces.dir/all] Error 2
+[1.295s] gmake[1]: *** Waiting for unfinished jobs....
+[1.347s] [ 37%] Built target example_interfaces__rosidl_typesupport_introspection_cpp
+[1.379s] [ 49%] Built target example_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.393s] gmake: *** [Makefile:146: all] Error 2
+[1.394s] Invoked command in '/home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/home/robotica/Documents/Taller1/taller1_ws/install/paquete_scr_servicios:/opt/ros/humble /usr/bin/cmake --build /home/robotica/Documents/Taller1/taller1_ws/build/example_interfaces -- -j5 -l5

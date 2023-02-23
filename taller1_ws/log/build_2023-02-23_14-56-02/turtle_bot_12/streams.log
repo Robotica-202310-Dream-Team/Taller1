@@ -1,0 +1,37 @@
+[2.030s] Invoking command in '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12': PYTHONPATH=/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/prefix_override:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build
+[2.763s] running develop
+[2.766s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.768s]   warnings.warn(
+[2.773s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.779s]   warnings.warn(
+[2.940s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[2.940s]   warnings.warn(
+[2.960s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[2.960s]   warnings.warn(
+[3.451s] Invoked command in '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12' returned '0': PYTHONPATH=/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/prefix_override:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build
+[3.452s] Invoking command in '/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12': PYTHONPATH=/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/prefix_override:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtle_bot_12 build --build-base /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build install --record /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/install.log --single-version-externally-managed
+[4.187s] running egg_info
+[4.190s] writing ../../build/turtle_bot_12/turtle_bot_12.egg-info/PKG-INFO
+[4.192s] writing dependency_links to ../../build/turtle_bot_12/turtle_bot_12.egg-info/dependency_links.txt
+[4.193s] writing entry points to ../../build/turtle_bot_12/turtle_bot_12.egg-info/entry_points.txt
+[4.196s] writing requirements to ../../build/turtle_bot_12/turtle_bot_12.egg-info/requires.txt
+[4.198s] writing top-level names to ../../build/turtle_bot_12/turtle_bot_12.egg-info/top_level.txt
+[4.206s] reading manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'
+[4.212s] writing manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'
+[4.214s] running build
+[4.214s] running build_py
+[4.215s] running install
+[4.216s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.216s]   warnings.warn(
+[4.218s] running install_lib
+[4.243s] running install_data
+[4.250s] running install_egg_info
+[4.250s] removing '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12-0.0.0-py3.10.egg-info' (and everything under it)
+[4.251s] Copying ../../build/turtle_bot_12/turtle_bot_12.egg-info to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12-0.0.0-py3.10.egg-info
+[4.258s] running install_scripts
+[4.330s] Installing client script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12
+[4.331s] Installing service script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12
+[4.342s] Installing turtle_bot_interface script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12
+[4.343s] Installing turtle_bot_teleop script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12
+[4.343s] writing list of installed files to '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/install.log'
+[4.412s] Invoked command in '/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12' returned '0': PYTHONPATH=/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/prefix_override:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtle_bot_12 build --build-base /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build install --record /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/install.log --single-version-externally-managed
