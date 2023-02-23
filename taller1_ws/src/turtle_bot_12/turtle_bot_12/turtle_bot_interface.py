@@ -11,7 +11,9 @@ import turtle
 import tkinter as tk
 from tkinter import filedialog
 from pathlib import Path
-
+import sys
+from example_interfaces.srv import SetBool
+   
 # Este codigo se suscribe al topico con mensaje tipo Twist de posicon
 # y grafica en tiempo real la posición del robot en un topico con 
 # mensaje tipo Image
@@ -33,18 +35,24 @@ class MinimalPublisher_suscriber(Node):
         self.pos_y = 0
         self.pos_x_total = [0]
         self.pos_y_total = [0]
-        self.poses_new  =    [0,0]
+        self.poses_new  = [0,0]
         super().__init__('turtle_bot_interface')
         #self.publisher_ = self.create_publisher(String, 'turtle_bot_image', 10) Publica un string
         self.publisher_ = self.create_publisher(Image, 'turtle_bot_image', 10) #publica una imagen
-        self.subscription = self.create_subscription(
-            Twist,
-            'turtlebot_position',
-            self.subscriber,
-            1)
+        self.cli = self.create_client(SetBool, 'read_txt')
+        while not self.cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('service not available, waiting again...')
+            self.req = SetBool.Request()
+        self.subscription = self.create_subscription(Twist,'turtlebot_position',self.subscriber,1)
         self.subscription  # prevent unused variable warning
         self.br = CvBridge()
         self.mapa_base =  255*np.ones((500,500),dtype=np.uint8)
+
+    def send_request(self, txt):
+        self.req.txt = txt
+        self.future = self.cli.call_async(self.req)
+        rclpy.spin_until_future_complete(self, self.future)
+        return self.future.result()
 
     def subscriber(self, msg):
         self.pos_x = msg.linear.x
@@ -124,7 +132,7 @@ def main(args=None):
     #rclpy.spin(minimal_subscriber_publisher)
     #minimal_subscriber_publisher.destroy_node()
     #rclpy.shutdown()
-
+    
 
 ##############################################################################################################################
 
@@ -145,10 +153,12 @@ def main(args=None):
     display = Canvas()
     minimal_subscriber_publisher = MinimalPublisher_suscriber()
     print ("minimal_subscriber_publisher")
+    minimal_subscriber_publisher = MinimalPublisher_suscriber()
+    response = minimal_subscriber_publisher.send_request(str(sys.argv[1]))
+    minimal_subscriber_publisher.get_logger().info('Result reading txt: '+(str(sys.argv[1]), response.respuesta))
     rclpy.spin(minimal_subscriber_publisher)
     minimal_subscriber_publisher.destroy_node()
     rclpy.shutdown()
-
 
 
 
