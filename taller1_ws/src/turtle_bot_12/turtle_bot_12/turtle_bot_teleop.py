@@ -1,4 +1,5 @@
 from time import sleep
+import os
 import rclpy
 from rclpy.node import Node
 from rclpy.duration import Duration
@@ -25,8 +26,8 @@ class Turtle_bot_teleop(Node):
         self.twist.angular.y = 0.0
         listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
         listener.start()
-
-        self.pathTXT = '/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt'
+        self.dir = os.path.dirname(__file__) 
+        self.pathTXT = self.dir +'/resource/recorrido.txt'
         self.archivo = open(self.pathTXT,"w")
         self.guardar = True
         self.decision = False
