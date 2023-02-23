@@ -1,4 +1,5 @@
 import rclpy
+import os   
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from example_interfaces.srv import SetBool
@@ -22,7 +23,8 @@ class Turtle_bot_player(Node):
     def read_txt_callback(self, request, response):
         nom = request.mensaje
         print(nom)
-        ruta = "/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt"
+        self.dir = os.path.dirname(__file__) 
+        ruta = self.dir +'/resource/recorrido.txt'
         archivo = open(ruta, 'r')
         cont = 0
         tamanio = len(archivo.readlines())
