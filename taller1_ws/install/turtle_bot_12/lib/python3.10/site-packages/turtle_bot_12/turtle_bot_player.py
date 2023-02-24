@@ -30,6 +30,8 @@ class Turtle_bot_player(Node):
         print("La velocidad angular es: " + str(self.velAngular))
         cont = 0
         tamanio = len(archivo.readlines())
+
+        print(tamanio)
         archivo.close()
         archivo = open(nom, 'r')
         while cont<tamanio:
@@ -50,7 +52,7 @@ class Turtle_bot_player(Node):
                 self.twist.linear.x = 0.0
                 self.twist.angular.z = 0.0
             self.publisher.publish(self.twist)
-            time.sleep(0.01)
+            time.sleep(0.05)
             cont += 1
         self.twist.linear.x = 0.0
         self.twist.angular.z = 0.0

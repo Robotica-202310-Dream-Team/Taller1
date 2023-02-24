@@ -58,7 +58,7 @@ class Turtle_bot_interface(Node):
         tk.Button(master = root, background="#c35bcf" , text = "Iniciar",font="helvetica 10", command = lambda:self.boton1([50,50])).pack(side = tk.LEFT)
         tk.Label(root,background="#c35bcf",  text="Guardar como:",font="helvetica 10").pack(side = tk.LEFT,)
         self.insert_nick = tk.Entry(root, background="#a5e1f2", width=20,  textvariable=self.nick).pack(side = tk.LEFT)
-        tk.Button(master = root, background="#c35bcf", text = "Guardar Imagen",font="helvetica 10", command=self.boton2).pack(side=tk.LEFT)
+        tk.Button(master = root, background="#c35bcf", text = "Teleop",font="helvetica 10", command=self.boton2).pack(side=tk.LEFT)
         tk.Button(master = root, background="#c35bcf", text = "Replicar recorrido",font="helvetica 10", command=self.boton3).pack(side = tk.LEFT)
         tk.Button(master = root, background="#c35bcf", text = "Funcionalidad 4",font="helvetica 10", command=self.boton4).pack(side = tk.LEFT)
         tk.Button(master = root, background="#c35bcf", text = "Funcioanlidad 5",font="helvetica 10", command=self.boton5).pack(side = tk.LEFT)
@@ -69,6 +69,17 @@ class Turtle_bot_interface(Node):
         #minimal_subscriber_publisher.destroy_node()
         #rclpy.shutdown()
         root.mainloop()
+        '''
+        thread1 = threading.Thread(target=root.mainloop())
+        print ("th1")
+        thread2 = threading.Thread(target=rclpy.spin(self))
+        print ("th2")
+        thread1.start()
+        thread2.start()
+        thread1.join()
+        thread2.join()
+        print ("joined")
+        '''
         #################################################################################################################################################33
     def send_request(self, txt):
         while not self.cli.wait_for_service(timeout_sec=1.0):
@@ -81,6 +92,8 @@ class Turtle_bot_interface(Node):
     def subscriber(self, msg):
         self.pos_x = msg.linear.x
         self.pos_y = msg.linear.y
+        print (f"x = {self.pos_x} y = {self.pos_y}")
+
 
         #print ("not shutdown")
         self.poses_new = pixels((self.pos_x,self.pos_y),height,width)
@@ -89,8 +102,9 @@ class Turtle_bot_interface(Node):
         self.pos_y_total.append(self.poses_new[1])
         
         #for i in range(len(pos_y_total)):
-        self.t.goto(self.pos_x_total[-1], self.pos_y_total[-1])
+        
         print (f"x = {self.pos_x_total[-1]} y = {self.pos_y_total[-1]}, i= {len(self.pos_x_total)}")
+        self.t.goto (self.poses_new[0], self.poses_new[1])
         self.publisher()
                 
                 
@@ -103,10 +117,13 @@ class Turtle_bot_interface(Node):
     
     def boton1(self,pose_new):
         #t.forward(1)
+        print ("boton1")
+        thread = threading.Thread(target=rclpy.spin(self))
+        thread.start()
+        
         self.t.pencolor("red")
         self.t.pensize(2)
-        self.t.speed(0)
-        self.t.goto(0,0)
+        
     
     def boton2 (self):
         print ("Boton2")
@@ -115,6 +132,7 @@ class Turtle_bot_interface(Node):
         ruta = scriptDir + "/"+name
         print (ruta)
         self.canvas.postscript(file=ruta, colormode='color')
+        pass
         
     def boton3(self):
         print ("Boton3")
@@ -123,8 +141,9 @@ class Turtle_bot_interface(Node):
         ruta = scriptDir + "/"+name
         self.req.mensaje = ruta
         response = self.send_request(str(self.req.mensaje))
+        print ("respuesta?????")
         self.get_logger().info('Result reading txt: '+ response.respuesta)
-        
+        pass
 
     def boton4(self):
         print ("funcionalidad 4")
@@ -139,16 +158,18 @@ class Turtle_bot_interface(Node):
 def pixels (coord,height, width): # Pasar de metros a pixeles 
     x_len = 5 # metros
     y_len = 5 # metros
-    x_center = width//2
-    y_center = height//2
-    x =  round((coord[0]*width // x_len ) +  x_center) 
-    y =  round((coord [1]*height// y_len) + y_center)   
+    #x_center = width//2
+    #y_center = height//2
+    print (width)
+    x =  round((coord[0]*width // x_len ) ) 
+    y =  round((coord [1]*height// y_len) )   
     return [int(x),int(y)]
     
 def main(args=None):    
     rclpy.init(args=args)
     turtle_bot_interface = Turtle_bot_interface()
-    rclpy.spin(turtle_bot_interface)
+    print("turtle_bot_interface")
+    
     Turtle_bot_interface.destroy_node()
     rclpy.shutdown()
     
