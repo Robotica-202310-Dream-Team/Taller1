@@ -1,5 +1,4 @@
 from time import sleep
-import os
 import rclpy
 from rclpy.node import Node
 from rclpy.duration import Duration
@@ -26,10 +25,8 @@ class Turtle_bot_teleop(Node):
         self.twist.angular.y = 0.0
         listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
         listener.start()
-        self.dir = os.path.dirname(__file__) 
-        self.pathTXT = self.dir +'/resource/recorrido.txt'
-        self.archivo = open(self.pathTXT,"w")
-        self.guardar = True
+
+        self.guardar = False
         self.decision = False
         self.tiempoInicialLetraNoEspichada = self.get_clock().now().to_msg().sec
         self.tiempoFinalLetraNoEspichada = 0
@@ -95,6 +92,11 @@ class Turtle_bot_teleop(Node):
         if lista[0] == "si":
             self.guardar = True
             self.pathTXT = lista[1]
+            self.archivo = open(self.pathTXT,"w")
+            self.archivo.write(str(self.velLineal) + "," + str(self.velAngular) + "\n")
+
+
+
         
 
 # --------------------------------------------------------MAIN-----------------------------------------------------------

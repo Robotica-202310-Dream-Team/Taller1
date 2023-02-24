@@ -1,0 +1,6 @@
+msg/String.idl
+msg/String.msg
+srv/ReadTxt.idl
+srv/ReadTxt.srv
+srv/ReadTxt_Request.msg
+srv/ReadTxt_Response.msg

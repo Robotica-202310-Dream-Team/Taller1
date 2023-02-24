@@ -1,5 +1,6 @@
 [console_scripts]
+client = turtle_bot_12.turtle_bot_interface:main
+service = turtle_bot_12.turtle_bot_player:main
 turtle_bot_interface = turtle_bot_12.turtle_bot_interface:main
-turtle_bot_player = turtle_bot_12.turtle_bot_player:main
 turtle_bot_teleop = turtle_bot_12.turtle_bot_teleop:main
 

@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-# EASY-INSTALL-ENTRY-SCRIPT: 'turtle-bot-12','console_scripts','turtle_bot_teleop'
+# EASY-INSTALL-ENTRY-SCRIPT: 'turtle-bot-12==0.0.0','console_scripts','turtle_bot_teleop'
 import re
 import sys
 
 # for compatibility with easy_install; see #2198
-__requires__ = 'turtle-bot-12'
+__requires__ = 'turtle-bot-12==0.0.0'
 
 try:
     from importlib.metadata import distribution
@@ -30,4 +30,4 @@ globals().setdefault('load_entry_point', importlib_load_entry_point)
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
-    sys.exit(load_entry_point('turtle-bot-12', 'console_scripts', 'turtle_bot_teleop')())
+    sys.exit(load_entry_point('turtle-bot-12==0.0.0', 'console_scripts', 'turtle_bot_teleop')())
