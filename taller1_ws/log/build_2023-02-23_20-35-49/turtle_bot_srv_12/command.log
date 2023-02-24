@@ -1,0 +1,4 @@
+Invoking command in '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12 -- -j5 -l5
+Invoked command in '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12 -- -j5 -l5
+Invoking command in '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12
+Invoked command in '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12

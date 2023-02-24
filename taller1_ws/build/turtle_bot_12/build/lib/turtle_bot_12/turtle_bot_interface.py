@@ -12,7 +12,7 @@ import tkinter as tk
 from tkinter import filedialog
 from pathlib import Path
 import sys
-from example_interfaces.srv import SetBool
+from turtle_bot_srv_12.srv import ReadTxt
    
 # Este codigo se suscribe al topico con mensaje tipo Twist de posicon
 # y grafica en tiempo real la posición del robot en un topico con 
@@ -39,10 +39,10 @@ class MinimalPublisher_suscriber(Node):
         super().__init__('turtle_bot_interface')
         #self.publisher_ = self.create_publisher(String, 'turtle_bot_image', 10) Publica un string
         self.publisher_ = self.create_publisher(Image, 'turtle_bot_image', 10) #publica una imagen
-        self.cli = self.create_client(SetBool, 'read_txt')
+        self.cli = self.create_client(ReadTxt, 'read_txt')
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
-            self.req = SetBool.Request()
+            self.req = ReadTxt.Request()
         self.subscription = self.create_subscription(Twist,'turtlebot_position',self.subscriber,1)
         self.subscription  # prevent unused variable warning
         self.br = CvBridge()

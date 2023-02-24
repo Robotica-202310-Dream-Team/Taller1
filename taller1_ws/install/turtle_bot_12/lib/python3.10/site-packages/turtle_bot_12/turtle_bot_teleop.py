@@ -26,9 +26,7 @@ class Turtle_bot_teleop(Node):
         listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
         listener.start()
 
-        self.pathTXT = '/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt'
-        self.archivo = open(self.pathTXT,"w")
-        self.guardar = True
+        self.guardar = False
         self.decision = False
         self.tiempoInicialLetraNoEspichada = self.get_clock().now().to_msg().sec
         self.tiempoFinalLetraNoEspichada = 0
@@ -94,6 +92,11 @@ class Turtle_bot_teleop(Node):
         if lista[0] == "si":
             self.guardar = True
             self.pathTXT = lista[1]
+            self.archivo = open(self.pathTXT,"w")
+            self.archivo.write(str(self.velLineal) + "," + str(self.velAngular) + "\n")
+
+
+
         
 
 # --------------------------------------------------------MAIN-----------------------------------------------------------

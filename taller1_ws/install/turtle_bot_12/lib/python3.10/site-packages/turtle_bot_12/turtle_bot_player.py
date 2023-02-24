@@ -10,9 +10,7 @@ class Turtle_bot_player(Node):
         super().__init__('turtle_bot_player')
         self.publisher = self.create_publisher(Twist, 'turtlebot_cmdVel', 10)
         self.srv = self.create_service(ReadTxt, 'read_txt', self.read_txt_callback)
-        print('listo')
-        self.velLineal = 10.0
-        self.velAngular = 20.0
+        print('LISTO')
         self.twist = Twist()
         self.twist.linear.y = 0.0
         self.twist.linear.z = 0.0
@@ -24,6 +22,10 @@ class Turtle_bot_player(Node):
         print(nom)
         ruta = "/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt"
         archivo = open(ruta, 'r')
+        linea = archivo.readline().rstrip('\n')
+        lista = linea.split(",")
+        self.velLineal = lista[0]
+        self.velAngular = lista[1]
         cont = 0
         tamanio = len(archivo.readlines())
         archivo.close()

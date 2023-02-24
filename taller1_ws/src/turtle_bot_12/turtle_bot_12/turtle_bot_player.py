@@ -10,7 +10,7 @@ class Turtle_bot_player(Node):
         super().__init__('turtle_bot_player')
         self.publisher = self.create_publisher(Twist, 'turtlebot_cmdVel', 10)
         self.srv = self.create_service(ReadTxt, 'read_txt', self.read_txt_callback)
-        print('listo')
+        print('LISTO')
         self.twist = Twist()
         self.twist.linear.y = 0.0
         self.twist.linear.z = 0.0
