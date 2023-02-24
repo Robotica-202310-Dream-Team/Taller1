@@ -35,7 +35,7 @@ class Turtle_bot_teleop(Node):
         self.diferencia = 0 
         self.termino = True
         
-         
+        
 
     # -----------------------------------------------------KEYBOARD THREAD--------------------------------------------------------------
 
@@ -56,31 +56,34 @@ class Turtle_bot_teleop(Node):
                 self.twist.angular.z = 0.0
             elif key.char == 'a':
                 self.twist.linear.x = 0.0
-                self.twist.angular.z = -self.velAngular
+                self.twist.angular.z = self.velAngular
             elif key.char == 's':
                 self.twist.linear.x = -self.velLineal
                 self.twist.angular.z = 0.0
             elif key.char == 'd':
                 self.twist.linear.x = 0.0
-                self.twist.angular.z = self.velAngular
+                self.twist.angular.z = -self.velAngular
             self.publisher.publish(self.twist)
         except AttributeError:
-            print('special key {0} pressed'.format(key))
-            self.twist.linear.x = 0.0
-            self.twist.angular.z = 0.0
-            if key.char =='w':
-                self.twist.linear.x = self.velLineal
-                self.twist.angular.z = 0.0
-            elif key.char == 'a':
+            try:
+                print('special key {0} pressed'.format(key))
                 self.twist.linear.x = 0.0
-                self.twist.angular.z = -self.velAngular
-            elif key.char == 's':
-                self.twist.linear.x = -self.velLineal
                 self.twist.angular.z = 0.0
-            elif key.char == 'd':
-                self.twist.linear.x = 0.0
-                self.twist.angular.z = self.velAngular
-            self.publisher.publish(self.twist)
+                if key.char =='w':
+                    self.twist.linear.x = self.velLineal
+                    self.twist.angular.z = 0.0
+                elif key.char == 'a':
+                    self.twist.linear.x = 0.0
+                    self.twist.angular.z = self.velAngular
+                elif key.char == 's':
+                    self.twist.linear.x = -self.velLineal
+                    self.twist.angular.z = 0.0
+                elif key.char == 'd':
+                    self.twist.linear.x = 0.0
+                    self.twist.angular.z = -self.velAngular
+                self.publisher.publish(self.twist)
+            except: 
+                pass
 
 
     def on_release(self,key):

@@ -45,6 +45,8 @@ class Turtle_bot_interface(Node):
         self.cli = self.create_client(ReadTxt, 'read_txt')
         self.subscription = self.create_subscription(Twist,'turtlebot_position',self.subscriber,1)
         self.subscription  # prevent unused variable warning
+        self.infoGuardar = self.create_publisher(String, 'info_guardar_txt', 10)
+
         self.br = CvBridge()
         self.mapa_base =  255*np.ones((500,500),dtype=np.uint8)
         self.req = ReadTxt.Request()
@@ -58,7 +60,7 @@ class Turtle_bot_interface(Node):
         tk.Button(master = root, background="#c35bcf" , text = "Iniciar",font="helvetica 10", command = lambda:self.boton1([50,50])).pack(side = tk.LEFT)
         tk.Label(root,background="#c35bcf",  text="Guardar como:",font="helvetica 10").pack(side = tk.LEFT,)
         self.insert_nick = tk.Entry(root, background="#a5e1f2", width=20,  textvariable=self.nick).pack(side = tk.LEFT)
-        tk.Button(master = root, background="#c35bcf", text = "Guardar Imagen",font="helvetica 10", command=self.boton2).pack(side=tk.LEFT)
+        tk.Button(master = root, background="#c35bcf", text = "Teleop",font="helvetica 10", command=self.boton2).pack(side=tk.LEFT)
         tk.Button(master = root, background="#c35bcf", text = "Replicar recorrido",font="helvetica 10", command=self.boton3).pack(side = tk.LEFT)
         tk.Button(master = root, background="#c35bcf", text = "Funcionalidad 4",font="helvetica 10", command=self.boton4).pack(side = tk.LEFT)
         tk.Button(master = root, background="#c35bcf", text = "Funcioanlidad 5",font="helvetica 10", command=self.boton5).pack(side = tk.LEFT)
@@ -120,7 +122,6 @@ class Turtle_bot_interface(Node):
         print ("boton1")
         thread = threading.Thread(target=rclpy.spin(self))
         thread.start()
-        
         self.t.pencolor("red")
         self.t.pensize(2)
         
@@ -146,7 +147,17 @@ class Turtle_bot_interface(Node):
         pass
 
     def boton4(self):
-        print ("funcionalidad 4")
+        print ("Boton 4")
+        scriptDir = filedialog.askdirectory()
+        res =self.nick.get()
+        lista = res.split(",")
+        respSiNo = lista[0]
+        name = lista[1]
+        ruta = scriptDir + "/" + name
+        msg = String()
+        msg.data = (str(respSiNo) + "," + ruta)
+        self.infoGuardar.publish(msg)
+
     def boton5(self):
         print ("funcionalidad 5")
         #cv2.imwrite( ruta,img)
