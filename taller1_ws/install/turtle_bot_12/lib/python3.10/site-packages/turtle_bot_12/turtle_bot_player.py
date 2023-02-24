@@ -3,7 +3,6 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from turtle_bot_srv_12.srv import ReadTxt
 import time
-import os
 
 class Turtle_bot_player(Node):
 
@@ -11,7 +10,7 @@ class Turtle_bot_player(Node):
         super().__init__('turtle_bot_player')
         self.publisher = self.create_publisher(Twist, 'turtlebot_cmdVel', 10)
         self.srv = self.create_service(ReadTxt, 'read_txt', self.read_txt_callback)
-        print('listo')
+        print('Servicio listo')
         self.twist = Twist()
         self.twist.linear.y = 0.0
         self.twist.linear.z = 0.0
@@ -19,22 +18,20 @@ class Turtle_bot_player(Node):
         self.twist.angular.y = 0.0
 
     def read_txt_callback(self, request, response):
+        print('Se ha llamado al servicio')
         nom = request.mensaje
-        print(nom)
-        dir = os.path.dirname(__file__)
-        ruta = "/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt"
-        
-        archivo = open(ruta, 'r')
+        print("La ruta del archivo es: " + nom)
+        archivo = open(nom, 'r')
         linea = archivo.readline().rstrip('\n')
         lista = linea.split(",")
         self.velLineal = float(lista[0])
         self.velAngular = float(lista[1])
+        print("La velocidad lineal es: " + str(self.velLineal))
+        print("La velocidad angular es: " + str(self.velAngular))
         cont = 0
         tamanio = len(archivo.readlines())
-        print (tamanio)
         archivo.close()
-        archivo=open(ruta,"r")
-        
+        archivo = open(nom, 'r')
         while cont<tamanio:
             linea = archivo.readline().rstrip('\n')
             if linea =='w':
@@ -53,7 +50,7 @@ class Turtle_bot_player(Node):
                 self.twist.linear.x = 0.0
                 self.twist.angular.z = 0.0
             self.publisher.publish(self.twist)
-            time.sleep(0.1)
+            time.sleep(0.01)
             cont += 1
         self.twist.linear.x = 0.0
         self.twist.angular.z = 0.0
