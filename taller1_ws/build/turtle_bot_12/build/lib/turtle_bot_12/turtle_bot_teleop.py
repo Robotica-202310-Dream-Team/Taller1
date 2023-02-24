@@ -26,7 +26,9 @@ class Turtle_bot_teleop(Node):
         listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
         listener.start()
 
-        self.guardar = False
+        self.pathTXT = '/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt'
+        self.archivo = open(self.pathTXT,"w")
+        self.guardar = True
         self.decision = False
         self.tiempoInicialLetraNoEspichada = self.get_clock().now().to_msg().sec
         self.tiempoFinalLetraNoEspichada = 0
@@ -66,6 +68,19 @@ class Turtle_bot_teleop(Node):
             print('special key {0} pressed'.format(key))
             self.twist.linear.x = 0.0
             self.twist.angular.z = 0.0
+            if key.char =='w':
+                print("HOLA")
+                self.twist.linear.x = self.velLineal
+                self.twist.angular.z = 0.0
+            elif key.char == 'a':
+                self.twist.linear.x = 0.0
+                self.twist.angular.z = -self.velAngular
+            elif key.char == 's':
+                self.twist.linear.x = -self.velLineal
+                self.twist.angular.z = 0.0
+            elif key.char == 'd':
+                self.twist.linear.x = 0.0
+                self.twist.angular.z = self.velAngular
             self.publisher.publish(self.twist)
 
 
