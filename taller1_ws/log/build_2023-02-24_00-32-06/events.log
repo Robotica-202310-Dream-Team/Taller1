@@ -1,0 +1,319 @@
+[0.000000] (-) TimerEvent: {}
+[0.020731] (turtle_bot_12) JobQueued: {'identifier': 'turtle_bot_12', 'dependencies': OrderedDict()}
+[0.020948] (turtle_bot_srv_12) JobQueued: {'identifier': 'turtle_bot_srv_12', 'dependencies': OrderedDict()}
+[0.021102] (turtle_bot_12) JobStarted: {'identifier': 'turtle_bot_12'}
+[0.063245] (-) TimerEvent: {}
+[0.169024] (-) TimerEvent: {}
+[0.228405] (turtle_bot_srv_12) JobStarted: {'identifier': 'turtle_bot_srv_12'}
+[0.276159] (-) TimerEvent: {}
+[0.381084] (-) TimerEvent: {}
+[0.487097] (-) TimerEvent: {}
+[0.590080] (-) TimerEvent: {}
+[0.691492] (-) TimerEvent: {}
+[0.797575] (-) TimerEvent: {}
+[0.922958] (-) TimerEvent: {}
+[1.051451] (-) TimerEvent: {}
+[1.190179] (-) TimerEvent: {}
+[1.347633] (-) TimerEvent: {}
+[1.451766] (-) TimerEvent: {}
+[1.553355] (-) TimerEvent: {}
+[1.692264] (-) TimerEvent: {}
+[1.793177] (-) TimerEvent: {}
+[1.895023] (-) TimerEvent: {}
+[2.000516] (-) TimerEvent: {}
+[2.107242] (-) TimerEvent: {}
+[2.218774] (-) TimerEvent: {}
+[2.321923] (-) TimerEvent: {}
+[2.410465] (turtle_bot_srv_12) JobProgress: {'identifier': 'turtle_bot_srv_12', 'progress': 'cmake'}
+[2.434383] (turtle_bot_srv_12) JobProgress: {'identifier': 'turtle_bot_srv_12', 'progress': 'build'}
+[2.445220] (-) TimerEvent: {}
+[2.460477] (turtle_bot_srv_12) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12', '--', '-j5', '-l5'], 'cwd': '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotica'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robotica'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1632'), ('SYSTEMD_EXEC_PID', '1800'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4119'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robotica/Documents/Taller1/taller1_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robotica'), ('JOURNAL_STREAM', '8:25849'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robotica'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robotica-VirtualBox:@/tmp/.ICE-unix/1769,unix/robotica-VirtualBox:/tmp/.ICE-unix/1769'), ('Coppelia_Root', '$/home/robotica/Downloads/Coppelia'), ('INVOCATION_ID', '16c4ac7320cb41eaa6e39ffe6e4c3708'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RW9R01'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:279567f9-8946-44b2-aacb-89dc002a10b2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/opt/ros/humble')]), 'shell': False}
+[2.547454] (-) TimerEvent: {}
+[2.652870] (-) TimerEvent: {}
+[2.759206] (-) TimerEvent: {}
+[2.893399] (-) TimerEvent: {}
+[3.006660] (-) TimerEvent: {}
+[3.122840] (turtle_bot_srv_12) StdoutLine: {'line': b'[  2%] Built target turtle_bot_srv_12__cpp\n'}
+[3.123514] (-) TimerEvent: {}
+[3.228715] (-) TimerEvent: {}
+[3.354917] (-) TimerEvent: {}
+[3.479866] (-) TimerEvent: {}
+[3.587693] (-) TimerEvent: {}
+[3.639960] (turtle_bot_srv_12) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_turtle_bot_srv_12\n'}
+[3.698166] (-) TimerEvent: {}
+[3.828019] (-) TimerEvent: {}
+[3.932436] (-) TimerEvent: {}
+[4.048273] (-) TimerEvent: {}
+[4.064871] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 12%] Built target turtle_bot_srv_12__rosidl_typesupport_introspection_cpp\n'}
+[4.174433] (-) TimerEvent: {}
+[4.316620] (-) TimerEvent: {}
+[4.443982] (-) TimerEvent: {}
+[4.555820] (-) TimerEvent: {}
+[4.671147] (-) TimerEvent: {}
+[4.777970] (-) TimerEvent: {}
+[4.896057] (-) TimerEvent: {}
+[4.999622] (-) TimerEvent: {}
+[5.104746] (-) TimerEvent: {}
+[5.208790] (-) TimerEvent: {}
+[5.321179] (-) TimerEvent: {}
+[5.434964] (-) TimerEvent: {}
+[5.538778] (turtle_bot_12) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/turtle_bot_12', 'build', '--build-base', '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build', 'install', '--record', '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/install.log', '--single-version-externally-managed'], 'cwd': '/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robotica', 'LC_TIME': 'es_CO.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/robotica', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_CO.UTF-8', 'MANAGERPID': '1632', 'SYSTEMD_EXEC_PID': '1800', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4119', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/robotica/Documents/Taller1/taller1_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'robotica', 'JOURNAL_STREAM': '8:25849', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'robotica', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/robotica-VirtualBox:@/tmp/.ICE-unix/1769,unix/robotica-VirtualBox:/tmp/.ICE-unix/1769', 'Coppelia_Root': '$/home/robotica/Downloads/Coppelia', 'INVOCATION_ID': '16c4ac7320cb41eaa6e39ffe6e4c3708', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_CO.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'es_CO.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.RW9R01', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_CO.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:279567f9-8946-44b2-aacb-89dc002a10b2', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_CO.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'es_CO.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/prefix_override:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_CO.UTF-8', 'LC_PAPER': 'es_CO.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12'}, 'shell': False}
+[5.573280] (-) TimerEvent: {}
+[5.685300] (-) TimerEvent: {}
+[5.787235] (-) TimerEvent: {}
+[5.929686] (-) TimerEvent: {}
+[6.046225] (-) TimerEvent: {}
+[6.148744] (-) TimerEvent: {}
+[6.253674] (-) TimerEvent: {}
+[6.300601] (turtle_bot_srv_12) StdoutLine: {'line': b'running egg_info\n'}
+[6.305204] (turtle_bot_srv_12) StdoutLine: {'line': b'writing turtle_bot_srv_12.egg-info/PKG-INFO\n'}
+[6.305567] (turtle_bot_srv_12) StdoutLine: {'line': b'writing dependency_links to turtle_bot_srv_12.egg-info/dependency_links.txt\n'}
+[6.306533] (turtle_bot_srv_12) StdoutLine: {'line': b'writing top-level names to turtle_bot_srv_12.egg-info/top_level.txt\n'}
+[6.312823] (turtle_bot_srv_12) StdoutLine: {'line': b"reading manifest file 'turtle_bot_srv_12.egg-info/SOURCES.txt'\n"}
+[6.315338] (turtle_bot_srv_12) StdoutLine: {'line': b"writing manifest file 'turtle_bot_srv_12.egg-info/SOURCES.txt'\n"}
+[6.354114] (-) TimerEvent: {}
+[6.451193] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_build_turtle_bot_srv_12_egg\n'}
+[6.454358] (-) TimerEvent: {}
+[6.555795] (-) TimerEvent: {}
+[6.572809] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 23%] Built target turtle_bot_srv_12__rosidl_typesupport_fastrtps_cpp\n'}
+[6.661437] (turtle_bot_12) StdoutLine: {'line': b'running egg_info\n'}
+[6.662975] (-) TimerEvent: {}
+[6.686868] (turtle_bot_12) StdoutLine: {'line': b'writing ../../build/turtle_bot_12/turtle_bot_12.egg-info/PKG-INFO\n'}
+[6.696122] (turtle_bot_12) StdoutLine: {'line': b'writing dependency_links to ../../build/turtle_bot_12/turtle_bot_12.egg-info/dependency_links.txt\n'}
+[6.697848] (turtle_bot_12) StdoutLine: {'line': b'writing entry points to ../../build/turtle_bot_12/turtle_bot_12.egg-info/entry_points.txt\n'}
+[6.699958] (turtle_bot_12) StdoutLine: {'line': b'writing requirements to ../../build/turtle_bot_12/turtle_bot_12.egg-info/requires.txt\n'}
+[6.700225] (turtle_bot_12) StdoutLine: {'line': b'writing top-level names to ../../build/turtle_bot_12/turtle_bot_12.egg-info/top_level.txt\n'}
+[6.700418] (turtle_bot_12) StdoutLine: {'line': b"reading manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'\n"}
+[6.700538] (turtle_bot_12) StdoutLine: {'line': b"writing manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'\n"}
+[6.700650] (turtle_bot_12) StdoutLine: {'line': b'running build\n'}
+[6.700763] (turtle_bot_12) StdoutLine: {'line': b'running build_py\n'}
+[6.700872] (turtle_bot_12) StdoutLine: {'line': b'copying turtle_bot_12/turtle_bot_interface.py -> /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build/lib/turtle_bot_12\n'}
+[6.705049] (turtle_bot_12) StdoutLine: {'line': b'running install\n'}
+[6.705289] (turtle_bot_12) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.706857] (turtle_bot_12) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.707411] (turtle_bot_12) StdoutLine: {'line': b'running install_lib\n'}
+[6.707667] (turtle_bot_12) StdoutLine: {'line': b'copying /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build/lib/turtle_bot_12/turtle_bot_interface.py -> /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12\n'}
+[6.707979] (turtle_bot_12) StdoutLine: {'line': b'byte-compiling /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12/turtle_bot_interface.py to turtle_bot_interface.cpython-310.pyc\n'}
+[6.710823] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 33%] Built target turtle_bot_srv_12__rosidl_typesupport_cpp\n'}
+[6.721918] (turtle_bot_12) StdoutLine: {'line': b'running install_data\n'}
+[6.722398] (turtle_bot_12) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.722535] (turtle_bot_12) StdoutLine: {'line': b"removing '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.722660] (turtle_bot_12) StdoutLine: {'line': b'Copying ../../build/turtle_bot_12/turtle_bot_12.egg-info to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12-0.0.0-py3.10.egg-info\n'}
+[6.750917] (turtle_bot_12) StdoutLine: {'line': b'running install_scripts\n'}
+[6.768216] (-) TimerEvent: {}
+[6.801237] (turtle_bot_12) StdoutLine: {'line': b'Installing client script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12\n'}
+[6.825816] (turtle_bot_12) StdoutLine: {'line': b'Installing service script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12\n'}
+[6.826176] (turtle_bot_12) StdoutLine: {'line': b'Installing turtle_bot_interface script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12\n'}
+[6.826609] (turtle_bot_12) StdoutLine: {'line': b'Installing turtle_bot_teleop script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12\n'}
+[6.826868] (turtle_bot_12) StdoutLine: {'line': b"writing list of installed files to '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/install.log'\n"}
+[6.855475] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 43%] Built target turtle_bot_srv_12__rosidl_generator_c\n'}
+[6.875695] (-) TimerEvent: {}
+[6.992063] (-) TimerEvent: {}
+[7.091558] (turtle_bot_12) CommandEnded: {'returncode': 0}
+[7.092533] (-) TimerEvent: {}
+[7.098716] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 53%] Built target turtle_bot_srv_12__rosidl_typesupport_fastrtps_c\n'}
+[7.232115] (-) TimerEvent: {}
+[7.242965] (turtle_bot_12) JobEnded: {'identifier': 'turtle_bot_12', 'rc': 0}
+[7.245035] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 64%] Built target turtle_bot_srv_12__rosidl_typesupport_c\n'}
+[7.333569] (-) TimerEvent: {}
+[7.463955] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 74%] Built target turtle_bot_srv_12__rosidl_typesupport_introspection_c\n'}
+[7.464295] (-) TimerEvent: {}
+[7.569917] (-) TimerEvent: {}
+[7.669057] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 74%] Built target turtle_bot_srv_12\n'}
+[7.670888] (-) TimerEvent: {}
+[7.759454] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 76%] Built target turtle_bot_srv_12__py\n'}
+[7.771928] (-) TimerEvent: {}
+[7.843144] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 84%] Built target turtle_bot_srv_12__rosidl_generator_py\n'}
+[7.874300] (-) TimerEvent: {}
+[7.969437] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 89%] Built target turtle_bot_srv_12__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.989999] (-) TimerEvent: {}
+[8.092483] (-) TimerEvent: {}
+[8.127337] (turtle_bot_srv_12) StdoutLine: {'line': b'[ 94%] Built target turtle_bot_srv_12__rosidl_typesupport_c__pyext\n'}
+[8.190069] (turtle_bot_srv_12) StdoutLine: {'line': b'[100%] Built target turtle_bot_srv_12__rosidl_typesupport_introspection_c__pyext\n'}
+[8.192721] (-) TimerEvent: {}
+[8.307054] (-) TimerEvent: {}
+[8.329093] (turtle_bot_srv_12) CommandEnded: {'returncode': 0}
+[8.411697] (-) TimerEvent: {}
+[8.513756] (-) TimerEvent: {}
+[8.633412] (-) TimerEvent: {}
+[8.735473] (-) TimerEvent: {}
+[8.843109] (-) TimerEvent: {}
+[8.967909] (-) TimerEvent: {}
+[9.104044] (-) TimerEvent: {}
+[9.213627] (-) TimerEvent: {}
+[9.378478] (-) TimerEvent: {}
+[9.443158] (turtle_bot_srv_12) JobProgress: {'identifier': 'turtle_bot_srv_12', 'progress': 'install'}
+[9.486650] (turtle_bot_srv_12) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12'], 'cwd': '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotica'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robotica'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1632'), ('SYSTEMD_EXEC_PID', '1800'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4119'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robotica/Documents/Taller1/taller1_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robotica'), ('JOURNAL_STREAM', '8:25849'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robotica'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robotica-VirtualBox:@/tmp/.ICE-unix/1769,unix/robotica-VirtualBox:/tmp/.ICE-unix/1769'), ('Coppelia_Root', '$/home/robotica/Downloads/Coppelia'), ('INVOCATION_ID', '16c4ac7320cb41eaa6e39ffe6e4c3708'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RW9R01'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:279567f9-8946-44b2-aacb-89dc002a10b2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_srv_12'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12:/opt/ros/humble')]), 'shell': False}
+[9.489599] (-) TimerEvent: {}
+[9.538110] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.539171] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/ament_index/resource_index/rosidl_interfaces/turtle_bot_srv_12\n'}
+[9.540393] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12\n'}
+[9.542279] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv\n'}
+[9.569195] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail\n'}
+[9.572188] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__functions.h\n'}
+[9.574988] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__functions.c\n'}
+[9.584376] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__type_support.h\n'}
+[9.584882] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__struct.h\n'}
+[9.587239] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/read_txt.h\n'}
+[9.587590] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg\n'}
+[9.588991] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail\n'}
+[9.591136] (-) TimerEvent: {}
+[9.595615] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__functions.h\n'}
+[9.596069] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__functions.c\n'}
+[9.596647] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__struct.h\n'}
+[9.597290] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__type_support.h\n'}
+[9.597619] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/string.h\n'}
+[9.598279] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/rosidl_generator_c__visibility_control.h\n'}
+[9.598509] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/library_path.sh\n'}
+[9.599113] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/library_path.dsv\n'}
+[9.599430] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_generator_c.so\n'}
+[9.599559] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12\n'}
+[9.599841] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv\n'}
+[9.600487] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail\n'}
+[9.600626] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__rosidl_typesupport_fastrtps_c.h\n'}
+[9.600895] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg\n'}
+[9.601204] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail\n'}
+[9.601513] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__rosidl_typesupport_fastrtps_c.h\n'}
+[9.601802] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[9.602157] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_fastrtps_c.so\n'}
+[9.602450] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12\n'}
+[9.602584] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv\n'}
+[9.602724] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail\n'}
+[9.603064] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__rosidl_typesupport_introspection_c.h\n'}
+[9.603220] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__type_support.c\n'}
+[9.603505] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg\n'}
+[9.603783] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail\n'}
+[9.603921] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__rosidl_typesupport_introspection_c.h\n'}
+[9.604256] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__type_support.c\n'}
+[9.604537] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[9.604836] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_introspection_c.so\n'}
+[9.605418] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_c.so\n'}
+[9.605911] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12\n'}
+[9.606348] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv\n'}
+[9.606681] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail\n'}
+[9.606967] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__struct.hpp\n'}
+[9.607331] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__traits.hpp\n'}
+[9.607653] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__builder.hpp\n'}
+[9.607934] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/read_txt.hpp\n'}
+[9.608236] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg\n'}
+[9.608502] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail\n'}
+[9.608641] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__traits.hpp\n'}
+[9.608876] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__builder.hpp\n'}
+[9.609134] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__struct.hpp\n'}
+[9.609415] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/string.hpp\n'}
+[9.609549] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12\n'}
+[9.609960] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv\n'}
+[9.610368] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail\n'}
+[9.610819] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.611422] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/dds_fastrtps\n'}
+[9.611656] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg\n'}
+[9.612124] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail\n'}
+[9.612417] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.612916] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/dds_fastrtps\n'}
+[9.613220] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[9.613354] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.613806] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12\n'}
+[9.614108] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv\n'}
+[9.614398] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail\n'}
+[9.614810] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__type_support.cpp\n'}
+[9.615474] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.615965] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg\n'}
+[9.616616] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail\n'}
+[9.617239] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.617635] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__type_support.cpp\n'}
+[9.617960] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_introspection_cpp.so\n'}
+[9.618447] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_cpp.so\n'}
+[9.618784] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/pythonpath.sh\n'}
+[9.618914] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/pythonpath.dsv\n'}
+[9.619249] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12-0.0.0-py3.10.egg-info\n'}
+[9.619406] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Installing: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[9.619534] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Installing: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[9.619806] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Installing: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[9.620297] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Installing: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[9.620463] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12\n'}
+[9.620765] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/_turtle_bot_srv_12_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[9.621096] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.621264] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/srv\n'}
+[9.621386] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/srv/_read_txt.py\n'}
+[9.621503] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/srv/_read_txt_s.c\n'}
+[9.621883] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/srv/__init__.py\n'}
+[9.622178] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/_turtle_bot_srv_12_s.ep.rosidl_typesupport_c.c\n'}
+[9.622421] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/libturtle_bot_srv_12__rosidl_generator_py.so\n'}
+[9.623386] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.625251] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/_turtle_bot_srv_12_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.625870] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/msg\n'}
+[9.626585] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/msg/_string.py\n'}
+[9.627072] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/msg/__init__.py\n'}
+[9.627907] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/msg/_string_s.c\n'}
+[9.628742] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/__init__.py\n'}
+[9.629490] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.674258] (turtle_bot_srv_12) StdoutLine: {'line': b"Listing '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12'...\n"}
+[9.675141] (turtle_bot_srv_12) StdoutLine: {'line': b"Listing '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/msg'...\n"}
+[9.676190] (turtle_bot_srv_12) StdoutLine: {'line': b"Listing '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/srv'...\n"}
+[9.702485] (-) TimerEvent: {}
+[9.741215] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.743928] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.748274] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.749931] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_generator_py.so\n'}
+[9.763084] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/msg/String.idl\n'}
+[9.763398] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/srv/ReadTxt.idl\n'}
+[9.763556] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/msg/String.msg\n'}
+[9.764053] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/srv/ReadTxt.srv\n'}
+[9.764430] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/srv/ReadTxt_Request.msg\n'}
+[9.764550] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/srv/ReadTxt_Response.msg\n'}
+[9.765057] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/ament_index/resource_index/package_run_dependencies/turtle_bot_srv_12\n'}
+[9.765289] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/ament_index/resource_index/parent_prefix_path/turtle_bot_srv_12\n'}
+[9.781861] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/ament_prefix_path.sh\n'}
+[9.782054] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/ament_prefix_path.dsv\n'}
+[9.782211] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/path.sh\n'}
+[9.782332] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/path.dsv\n'}
+[9.783349] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/local_setup.bash\n'}
+[9.784326] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/local_setup.sh\n'}
+[9.787909] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/local_setup.zsh\n'}
+[9.788316] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/local_setup.dsv\n'}
+[9.788608] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Installing: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/package.dsv\n'}
+[9.788988] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/ament_index/resource_index/packages/turtle_bot_srv_12\n'}
+[9.789837] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_generator_cExport.cmake\n'}
+[9.791716] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.800733] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.800979] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.801103] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.801212] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.801315] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_cExport.cmake\n'}
+[9.801417] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.801517] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_generator_cppExport.cmake\n'}
+[9.801683] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.801816] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.801923] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.802022] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.802121] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_cppExport.cmake\n'}
+[9.802220] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.802319] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_generator_pyExport.cmake\n'}
+[9.802418] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.802513] (-) TimerEvent: {}
+[9.807510] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/rosidl_cmake-extras.cmake\n'}
+[9.807985] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.808148] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.808450] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.808593] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.808707] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.809466] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.810187] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12Config.cmake\n'}
+[9.810493] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12Config-version.cmake\n'}
+[9.810697] (turtle_bot_srv_12) StdoutLine: {'line': b'-- Up-to-date: /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/package.xml\n'}
+[9.810878] (turtle_bot_srv_12) CommandEnded: {'returncode': 0}
+[9.909313] (-) TimerEvent: {}
+[10.012896] (-) TimerEvent: {}
+[10.113847] (-) TimerEvent: {}
+[10.216031] (-) TimerEvent: {}
+[10.317779] (-) TimerEvent: {}
+[10.422604] (-) TimerEvent: {}
+[10.532752] (-) TimerEvent: {}
+[10.634430] (-) TimerEvent: {}
+[10.737618] (-) TimerEvent: {}
+[10.844673] (-) TimerEvent: {}
+[10.953114] (-) TimerEvent: {}
+[11.067373] (-) TimerEvent: {}
+[11.182951] (-) TimerEvent: {}
+[11.241160] (turtle_bot_srv_12) JobEnded: {'identifier': 'turtle_bot_srv_12', 'rc': 0}
+[11.244864] (-) EventReactorShutdown: {}

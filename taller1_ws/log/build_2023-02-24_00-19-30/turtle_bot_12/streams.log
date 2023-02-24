@@ -1,0 +1,29 @@
+[4.656s] Invoking command in '/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12': PYTHONPATH=/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/prefix_override:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtle_bot_12 build --build-base /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build install --record /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/install.log --single-version-externally-managed
+[7.084s] running egg_info
+[7.110s] writing ../../build/turtle_bot_12/turtle_bot_12.egg-info/PKG-INFO
+[7.110s] writing dependency_links to ../../build/turtle_bot_12/turtle_bot_12.egg-info/dependency_links.txt
+[7.111s] writing entry points to ../../build/turtle_bot_12/turtle_bot_12.egg-info/entry_points.txt
+[7.111s] writing requirements to ../../build/turtle_bot_12/turtle_bot_12.egg-info/requires.txt
+[7.112s] writing top-level names to ../../build/turtle_bot_12/turtle_bot_12.egg-info/top_level.txt
+[7.121s] reading manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'
+[7.133s] writing manifest file '../../build/turtle_bot_12/turtle_bot_12.egg-info/SOURCES.txt'
+[7.135s] running build
+[7.135s] running build_py
+[7.140s] copying turtle_bot_12/turtle_bot_interface.py -> /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build/lib/turtle_bot_12
+[7.183s] running install
+[7.184s] running install_lib
+[7.185s] copying /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build/lib/turtle_bot_12/turtle_bot_interface.py -> /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12
+[7.185s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[7.185s]   warnings.warn(
+[7.193s] byte-compiling /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12/turtle_bot_interface.py to turtle_bot_interface.cpython-310.pyc
+[7.221s] running install_data
+[7.223s] running install_egg_info
+[7.224s] removing '/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12-0.0.0-py3.10.egg-info' (and everything under it)
+[7.225s] Copying ../../build/turtle_bot_12/turtle_bot_12.egg-info to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages/turtle_bot_12-0.0.0-py3.10.egg-info
+[7.242s] running install_scripts
+[7.363s] Installing client script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12
+[7.363s] Installing service script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12
+[7.363s] Installing turtle_bot_interface script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12
+[7.363s] Installing turtle_bot_teleop script to /home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/turtle_bot_12
+[7.365s] writing list of installed files to '/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/install.log'
+[7.627s] Invoked command in '/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12' returned '0': PYTHONPATH=/home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/prefix_override:/home/robotica/Documents/Taller1/taller1_ws/install/turtle_bot_12/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/turtle_bot_12 build --build-base /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/build install --record /home/robotica/Documents/Taller1/taller1_ws/build/turtle_bot_12/install.log --single-version-externally-managed

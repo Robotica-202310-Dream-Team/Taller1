@@ -26,8 +26,8 @@ class Turtle_bot_player(Node):
         lista = linea.split(",")
         self.velLineal = float(lista[0])
         self.velAngular = float(lista[1])
-        print("La velocidad lineal es: " + self.velLineal)
-        print("La velocidad angular es: " + self.velAngular)
+        print("La velocidad lineal es: " + str(self.velLineal))
+        print("La velocidad angular es: " + str(self.velAngular))
         cont = 0
         tamanio = len(archivo.readlines())
         archivo.close()

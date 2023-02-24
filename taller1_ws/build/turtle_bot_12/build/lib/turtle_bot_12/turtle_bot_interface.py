@@ -47,9 +47,8 @@ class Turtle_bot_interface(Node):
         self.subscription  # prevent unused variable warning
         self.br = CvBridge()
         self.mapa_base =  255*np.ones((500,500),dtype=np.uint8)
-        while not self.cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('service not available, waiting again...')
-            self.req = ReadTxt.Request()
+        self.req = ReadTxt.Request()
+
         
 
 
@@ -77,7 +76,9 @@ class Turtle_bot_interface(Node):
         root.mainloop()
 
     def send_request(self, txt):
-        self.req.txt = txt
+        while not self.cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('service not available, waiting again...')
+        self.req.mensaje = txt
         self.future = self.cli.call_async(self.req)
         rclpy.spin_until_future_complete(self, self.future)
         return self.future.result()
@@ -126,8 +127,8 @@ class Turtle_bot_interface(Node):
         name =self.nick.get()
         ruta = scriptDir + "/"+name
         self.req.mensaje = ruta
-        response = self.send_request(str(sys.argv[1]))
-        self.get_logger().info('Result reading txt: '+(str(sys.argv[1]), response.respuesta))
+        response = self.send_request(str(self.req.mensaje))
+        self.get_logger().info('Result reading txt: '+ response.respuesta)
         
 
     def boton4(self):

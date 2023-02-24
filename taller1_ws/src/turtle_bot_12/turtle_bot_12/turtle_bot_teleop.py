@@ -69,7 +69,6 @@ class Turtle_bot_teleop(Node):
             self.twist.linear.x = 0.0
             self.twist.angular.z = 0.0
             if key.char =='w':
-                print("HOLA")
                 self.twist.linear.x = self.velLineal
                 self.twist.angular.z = 0.0
             elif key.char == 'a':
