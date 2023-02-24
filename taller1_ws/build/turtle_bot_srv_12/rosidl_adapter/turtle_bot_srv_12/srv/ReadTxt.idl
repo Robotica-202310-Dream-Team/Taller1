@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from turtle_bot_srv_12/srv/ReadTxt.srv
+// generated code does not contain a copyright notice
+
+
+module turtle_bot_srv_12 {
+  module srv {
+    @verbatim (language="comment", text=
+      "This is an example of a service to set a boolean value." "\n"
+      "This can be used for testing but a semantically meaningful" "\n"
+      "one should be created to be built upon.")
+    struct ReadTxt_Request {
+      @verbatim (language="comment", text=
+        "e.g. for hardware enabling / disabling")
+      string mensaje;
+    };
+    struct ReadTxt_Response {
+      @verbatim (language="comment", text=
+        "informational, e.g. for error messages")
+      string respuesta;
+    };
+  };
+};
