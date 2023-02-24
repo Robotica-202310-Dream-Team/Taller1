@@ -3,6 +3,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from turtle_bot_srv_12.srv import ReadTxt
 import time
+import os
 
 class Turtle_bot_player(Node):
 
@@ -20,16 +21,20 @@ class Turtle_bot_player(Node):
     def read_txt_callback(self, request, response):
         nom = request.mensaje
         print(nom)
-        ruta = "/home/robotica/Documents/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt"
+        dir = os.path.dirname(__file__)
+        ruta = "/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt"
+        
         archivo = open(ruta, 'r')
         linea = archivo.readline().rstrip('\n')
         lista = linea.split(",")
-        self.velLineal = lista[0]
-        self.velAngular = lista[1]
+        self.velLineal = float(lista[0])
+        self.velAngular = float(lista[1])
         cont = 0
         tamanio = len(archivo.readlines())
+        print (tamanio)
         archivo.close()
-        archivo = open(ruta, 'r')
+        archivo=open(ruta,"r")
+        
         while cont<tamanio:
             linea = archivo.readline().rstrip('\n')
             if linea =='w':

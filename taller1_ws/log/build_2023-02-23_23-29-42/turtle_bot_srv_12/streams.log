@@ -1,0 +1,179 @@
+[0.464s] Invoking command in '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_srv_12': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_srv_12 -- -j8 -l8
+[0.541s] [ 10%] Built target turtle_bot_srv_12__rosidl_generator_c
+[0.554s] [ 12%] Built target turtle_bot_srv_12__cpp
+[0.574s] [ 12%] Built target ament_cmake_python_copy_turtle_bot_srv_12
+[0.598s] [ 23%] Built target turtle_bot_srv_12__rosidl_typesupport_introspection_c
+[0.603s] [ 33%] Built target turtle_bot_srv_12__rosidl_typesupport_c
+[0.607s] [ 43%] Built target turtle_bot_srv_12__rosidl_typesupport_cpp
+[0.608s] [ 53%] Built target turtle_bot_srv_12__rosidl_typesupport_fastrtps_c
+[0.622s] [ 64%] Built target turtle_bot_srv_12__rosidl_typesupport_introspection_cpp
+[0.624s] [ 74%] Built target turtle_bot_srv_12__rosidl_typesupport_fastrtps_cpp
+[0.653s] [ 74%] Built target turtle_bot_srv_12
+[0.683s] [ 76%] Built target turtle_bot_srv_12__py
+[0.715s] [ 84%] Built target turtle_bot_srv_12__rosidl_generator_py
+[0.752s] [ 89%] Built target turtle_bot_srv_12__rosidl_typesupport_fastrtps_c__pyext
+[0.758s] [ 94%] Built target turtle_bot_srv_12__rosidl_typesupport_introspection_c__pyext
+[0.761s] [100%] Built target turtle_bot_srv_12__rosidl_typesupport_c__pyext
+[1.226s] running egg_info
+[1.227s] writing turtle_bot_srv_12.egg-info/PKG-INFO
+[1.227s] writing dependency_links to turtle_bot_srv_12.egg-info/dependency_links.txt
+[1.228s] writing top-level names to turtle_bot_srv_12.egg-info/top_level.txt
+[1.234s] reading manifest file 'turtle_bot_srv_12.egg-info/SOURCES.txt'
+[1.235s] writing manifest file 'turtle_bot_srv_12.egg-info/SOURCES.txt'
+[1.281s] [100%] Built target ament_cmake_python_build_turtle_bot_srv_12_egg
+[1.300s] Invoked command in '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_srv_12' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_srv_12 -- -j8 -l8
+[1.409s] Invoking command in '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_srv_12': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_srv_12
+[1.423s] -- Install configuration: ""
+[1.424s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/ament_index/resource_index/rosidl_interfaces/turtle_bot_srv_12
+[1.424s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12
+[1.424s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv
+[1.424s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/read_txt.h
+[1.425s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail
+[1.425s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__struct.h
+[1.425s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__functions.h
+[1.425s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__type_support.h
+[1.426s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__functions.c
+[1.426s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg
+[1.426s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/string.h
+[1.426s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail
+[1.426s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__functions.h
+[1.426s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__functions.c
+[1.427s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__struct.h
+[1.427s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__type_support.h
+[1.427s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/rosidl_generator_c__visibility_control.h
+[1.427s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/library_path.sh
+[1.427s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/library_path.dsv
+[1.427s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_generator_c.so
+[1.428s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12
+[1.429s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv
+[1.429s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail
+[1.429s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__rosidl_typesupport_fastrtps_c.h
+[1.429s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg
+[1.430s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.430s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail
+[1.430s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__rosidl_typesupport_fastrtps_c.h
+[1.430s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_fastrtps_c.so
+[1.431s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12
+[1.431s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv
+[1.431s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail
+[1.431s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__type_support.c
+[1.431s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__rosidl_typesupport_introspection_c.h
+[1.432s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg
+[1.432s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.432s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail
+[1.432s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__rosidl_typesupport_introspection_c.h
+[1.432s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__type_support.c
+[1.433s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_introspection_c.so
+[1.433s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_c.so
+[1.433s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12
+[1.433s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv
+[1.433s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail
+[1.434s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__traits.hpp
+[1.434s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__builder.hpp
+[1.434s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__struct.hpp
+[1.434s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/read_txt.hpp
+[1.434s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg
+[1.434s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/string.hpp
+[1.434s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail
+[1.435s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__builder.hpp
+[1.435s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__struct.hpp
+[1.435s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__traits.hpp
+[1.436s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12
+[1.436s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv
+[1.436s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail
+[1.436s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/dds_fastrtps
+[1.436s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__rosidl_typesupport_fastrtps_cpp.hpp
+[1.436s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg
+[1.437s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.437s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail
+[1.437s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/dds_fastrtps
+[1.437s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__rosidl_typesupport_fastrtps_cpp.hpp
+[1.437s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_fastrtps_cpp.so
+[1.437s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12
+[1.438s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv
+[1.438s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail
+[1.438s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__type_support.cpp
+[1.438s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/srv/detail/read_txt__rosidl_typesupport_introspection_cpp.hpp
+[1.438s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg
+[1.438s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail
+[1.439s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__rosidl_typesupport_introspection_cpp.hpp
+[1.439s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/include/turtle_bot_srv_12/turtle_bot_srv_12/msg/detail/string__type_support.cpp
+[1.439s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_introspection_cpp.so
+[1.439s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_typesupport_cpp.so
+[1.440s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/pythonpath.sh
+[1.440s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/pythonpath.dsv
+[1.440s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12-0.0.0-py3.10.egg-info
+[1.440s] -- Installing: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.440s] -- Installing: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12-0.0.0-py3.10.egg-info/top_level.txt
+[1.440s] -- Installing: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12-0.0.0-py3.10.egg-info/PKG-INFO
+[1.440s] -- Installing: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.440s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12
+[1.441s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/_turtle_bot_srv_12_s.ep.rosidl_typesupport_c.c
+[1.441s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/libturtle_bot_srv_12__rosidl_generator_py.so
+[1.441s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/_turtle_bot_srv_12_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.441s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/__init__.py
+[1.441s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.442s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/srv
+[1.442s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/srv/_read_txt_s.c
+[1.442s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/srv/__init__.py
+[1.442s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/srv/_read_txt.py
+[1.442s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/msg
+[1.443s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/msg/__init__.py
+[1.443s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/msg/_string_s.c
+[1.443s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/msg/_string.py
+[1.444s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/_turtle_bot_srv_12_s.ep.rosidl_typesupport_introspection_c.c
+[1.444s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.444s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.504s] Listing '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12'...
+[1.504s] Listing '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/msg'...
+[1.505s] Listing '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/srv'...
+[1.516s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.516s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.517s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/local/lib/python3.10/dist-packages/turtle_bot_srv_12/turtle_bot_srv_12_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.518s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/lib/libturtle_bot_srv_12__rosidl_generator_py.so
+[1.519s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/msg/String.idl
+[1.519s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/srv/ReadTxt.idl
+[1.519s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/msg/String.msg
+[1.519s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/srv/ReadTxt.srv
+[1.519s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/srv/ReadTxt_Request.msg
+[1.520s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/srv/ReadTxt_Response.msg
+[1.520s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/ament_index/resource_index/package_run_dependencies/turtle_bot_srv_12
+[1.520s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/ament_index/resource_index/parent_prefix_path/turtle_bot_srv_12
+[1.521s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/ament_prefix_path.sh
+[1.521s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/ament_prefix_path.dsv
+[1.521s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/path.sh
+[1.521s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/environment/path.dsv
+[1.522s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/local_setup.bash
+[1.522s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/local_setup.sh
+[1.522s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/local_setup.zsh
+[1.522s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/local_setup.dsv
+[1.523s] -- Installing: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/package.dsv
+[1.523s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/ament_index/resource_index/packages/turtle_bot_srv_12
+[1.523s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_generator_cExport.cmake
+[1.523s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_generator_cExport-noconfig.cmake
+[1.523s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_typesupport_fastrtps_cExport.cmake
+[1.524s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.524s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_introspection_cExport.cmake
+[1.524s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.524s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_cExport.cmake
+[1.525s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_cExport-noconfig.cmake
+[1.525s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_generator_cppExport.cmake
+[1.525s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.525s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.526s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_introspection_cppExport.cmake
+[1.528s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.528s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_cppExport.cmake
+[1.529s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12__rosidl_typesupport_cppExport-noconfig.cmake
+[1.535s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_generator_pyExport.cmake
+[1.538s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/export_turtle_bot_srv_12__rosidl_generator_pyExport-noconfig.cmake
+[1.539s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/rosidl_cmake-extras.cmake
+[1.540s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.540s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/ament_cmake_export_libraries-extras.cmake
+[1.541s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/ament_cmake_export_targets-extras.cmake
+[1.542s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.543s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.543s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.543s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12Config.cmake
+[1.544s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/cmake/turtle_bot_srv_12Config-version.cmake
+[1.544s] -- Up-to-date: /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_srv_12/share/turtle_bot_srv_12/package.xml
+[1.544s] Invoked command in '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_srv_12' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/install/turtle_bot_12:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/build/turtle_bot_srv_12

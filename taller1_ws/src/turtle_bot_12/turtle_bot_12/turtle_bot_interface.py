@@ -40,9 +40,6 @@ class MinimalPublisher_suscriber(Node):
         #self.publisher_ = self.create_publisher(String, 'turtle_bot_image', 10) Publica un string
         self.publisher_ = self.create_publisher(Image, 'turtle_bot_image', 10) #publica una imagen
         self.cli = self.create_client(ReadTxt, 'read_txt')
-        while not self.cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('service not available, waiting again...')
-            self.req = ReadTxt.Request()
         self.subscription = self.create_subscription(Twist,'turtlebot_position',self.subscriber,1)
         self.subscription  # prevent unused variable warning
         self.br = CvBridge()
@@ -114,8 +111,19 @@ class Canvas:
         ruta = scriptDir + "/"+name
         print (ruta)
         self.canvas.postscript(file=ruta, colormode='color')
+        
     def boton3(self):
-        print ("funcionalidad 3")
+        print ("Boton3")
+        scriptDir = filedialog.askdirectory()
+        name =self.nick.get()
+        ruta = scriptDir + "/"+name
+        self.req.mensaje = ruta
+        minimal_subscriber_publisher = Turtle_bot_interface()
+        response = minimal_subscriber_publisher.send_request(str(sys.argv[1]))
+        minimal_subscriber_publisher.get_logger().info('Result reading txt: '+(str(sys.argv[1]), response.respuesta))
+        while not self.cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('service not available, waiting again...')
+            self.req = ReadTxt.Request()
     def boton4(self):
         print ("funcionalidad 4")
     def boton5(self):
@@ -151,11 +159,8 @@ def main(args=None):
     global display
     rclpy.init(args=args)
     display = Canvas()
-    minimal_subscriber_publisher = MinimalPublisher_suscriber()
     print ("minimal_subscriber_publisher")
     minimal_subscriber_publisher = MinimalPublisher_suscriber()
-    response = minimal_subscriber_publisher.send_request(str(sys.argv[1]))
-    minimal_subscriber_publisher.get_logger().info('Result reading txt: '+(str(sys.argv[1]), response.respuesta))
     rclpy.spin(minimal_subscriber_publisher)
     minimal_subscriber_publisher.destroy_node()
     rclpy.shutdown()

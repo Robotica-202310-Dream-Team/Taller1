@@ -5,7 +5,7 @@ from rclpy.duration import Duration
 from pynput import keyboard
 from std_msgs.msg import String
 from geometry_msgs.msg import Twist
-
+import os
 class Turtle_bot_teleop(Node):
 
     # -----------------------------------------------------INIT--------------------------------------------------------------
@@ -26,7 +26,10 @@ class Turtle_bot_teleop(Node):
         listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
         listener.start()
 
-        self.guardar = False
+        dir = os.path.dirname(__file__)
+        self.pathTXT = "/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt"
+        self.archivo = open(self.pathTXT,"w")
+        self.guardar = True
         self.decision = False
         self.tiempoInicialLetraNoEspichada = self.get_clock().now().to_msg().sec
         self.tiempoFinalLetraNoEspichada = 0
@@ -63,6 +66,23 @@ class Turtle_bot_teleop(Node):
                 self.twist.angular.z = self.velAngular
             self.publisher.publish(self.twist)
         except AttributeError:
+            if key.char == 'w' or key.char == 's' or key.char == 'a' or key.char == 'd':
+                if self.guardar == True:
+                    self.archivo.write(key.char + "\n")
+            print('alphanumeric key {0} pressed'.format(key.char))
+            if key.char =='w':
+                self.twist.linear.x = self.velLineal
+                self.twist.angular.z = 0.0
+            elif key.char == 'a':
+                self.twist.linear.x = 0.0
+                self.twist.angular.z = -self.velAngular
+            elif key.char == 's':
+                self.twist.linear.x = -self.velLineal
+                self.twist.angular.z = 0.0
+            elif key.char == 'd':
+                self.twist.linear.x = 0.0
+                self.twist.angular.z = self.velAngular
+            self.publisher.publish(self.twist)
             print('special key {0} pressed'.format(key))
             self.twist.linear.x = 0.0
             self.twist.angular.z = 0.0
