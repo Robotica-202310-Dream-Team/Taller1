@@ -45,7 +45,11 @@ No se le olvide cargar el entorno de simulación.
 
 # Punto 2
 
-Para correr la interfaz propuesta, en una nueva terminal ejecute
+Para correr la interfaz propuesta, en una nueva terminal ejecute dentro su workspace
+
+```sh
+. install/local_setup.bash
+```
 
 ```sh
 cd turtle_bot_12
