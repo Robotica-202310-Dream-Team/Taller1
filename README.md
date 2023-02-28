@@ -20,4 +20,28 @@ Una vez se finalizó esto último, por favor borrar las carpetas "build", "insta
 colcon build && . install/local_setup.bash
 ```
 
+# Punto 1
+
+Abra una nueva terminal y entre a la carpeta de "turtle_bot_12"
+
+```sh
+cd turtle_bot_12
+```
+Para controlar el robot del entorno de la simulación ejecute
+
+```sh
+ros2 run turtle_bot_12 turtle_bot_teleop
+```
+Aca, se solicitará definir una velocidad lineal y angular respectivamente. Para visualizar que efectivamente se está controlando el sistema, en una nueva terminal corra la simulación de Coppelia. Esta última depende de como esté instalada en su respectiva maquina virtual, en el nuestro es
+
+```sh
+cd Downloads/Coppelia
+```
+
+```sh
+./coppeliaSim.sh
+```
+No se le olvide cargar el entorno de simulación.
+
+# Punto 2
 
