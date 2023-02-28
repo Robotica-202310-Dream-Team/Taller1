@@ -2,10 +2,15 @@
 
 # Introducción a ROS2 Turtlebot2
  
-Sebastian Guayacan Mesa
+Asegure que su sistema operatimo se encuentra actualizado
 
-Juan Camilo Gutierrez Gonzalez
+```sh
+sudo apt update && sudo apt upgrade
+```
 
-Jaime Andres Nuñez Gonzalez
+Dentro de su carpeta de trabajo, clone los archivos de este repositorio
 
-Daniel Villar Gonzalez, 201923374
+```sh
+git clone https://github.com/Robotica-202310-Dream-Team/Taller1.git
+```
+
