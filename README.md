@@ -14,7 +14,7 @@ Dentro de su carpeta de trabajo, clone los archivos de este repositorio
 git clone https://github.com/Robotica-202310-Dream-Team/Taller1.git
 ```
 
-Una vez se finalizó esto último, construya las dependencias y actualice las variables de entorno
+Una vez se finalizó esto último, por favor borrar las carpetas "build", "install", y "log". Luego, construya las dependencias y actualice las variables de entorno
 
 ```sh
 colcon build && . install/local_setup.bash
