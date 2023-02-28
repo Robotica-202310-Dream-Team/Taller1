@@ -45,3 +45,16 @@ No se le olvide cargar el entorno de simulación.
 
 # Punto 2
 
+Para correr la interfaz propuesta, en una nueva terminal ejecute
+
+```sh
+cd turtle_bot_12
+```
+Para controlar el robot del entorno de la simulación ejecute
+
+```sh
+ros2 run turtle_bot_12 turtle_bot_interface
+
+# Punto 3
+
+# Punto 4
