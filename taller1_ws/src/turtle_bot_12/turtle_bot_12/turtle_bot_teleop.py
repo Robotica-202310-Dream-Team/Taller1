@@ -26,9 +26,9 @@ class Turtle_bot_teleop(Node):
         listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
         listener.start()
 
-        self.pathTXT = '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt'
-        self.archivo = open(self.pathTXT,"w")
-        self.guardar = True
+        
+       # self.pathTXT = '/home/sebastian/Uniandes202310/Robotica/Taller1/taller1_ws/src/turtle_bot_12/resource/recorrido.txt'
+       # self.archivo = open(self.pathTXT,"w")
         self.decision = False
         self.tiempoInicialLetraNoEspichada = self.get_clock().now().to_msg().sec
         self.tiempoFinalLetraNoEspichada = 0

@@ -57,13 +57,14 @@ class Turtle_bot_interface(Node):
         self.canvas.pack()
         self.t.pencolor("black")
         self.nick = tk.StringVar()
-        tk.Button(master = root, background="#c35bcf" , text = "Iniciar",font="helvetica 10", command = lambda:self.boton1([50,50])).pack(side = tk.LEFT)
-        tk.Label(root,background="#c35bcf",  text="Guardar como:",font="helvetica 10").pack(side = tk.LEFT,)
-        self.insert_nick = tk.Entry(root, background="#a5e1f2", width=20,  textvariable=self.nick).pack(side = tk.LEFT)
-        tk.Button(master = root, background="#c35bcf", text = "Teleop",font="helvetica 10", command=self.boton2).pack(side=tk.LEFT)
+        tk.Button(master = root, background="#c35bcf" , text = "Teleoperar",font="helvetica 10", command = self.boton1).pack(side = tk.LEFT)
+        tk.Button(master = root, background="#c35bcf", text = "Screenshoot",font="helvetica 10", command=self.boton2).pack(side=tk.LEFT)
         tk.Button(master = root, background="#c35bcf", text = "Replicar recorrido",font="helvetica 10", command=self.boton3).pack(side = tk.LEFT)
-        tk.Button(master = root, background="#c35bcf", text = "Funcionalidad 4",font="helvetica 10", command=self.boton4).pack(side = tk.LEFT)
+        tk.Button(master = root, background="#c35bcf", text = "Guardar teleop",font="helvetica 10", command=self.boton4).pack(side = tk.LEFT)
         tk.Button(master = root, background="#c35bcf", text = "Funcioanlidad 5",font="helvetica 10", command=self.boton5).pack(side = tk.LEFT)
+        tk.Label(root,background="#c35bcf",  text="File name:",font="helvetica 10").pack(side = tk.LEFT,)
+        self.insert_nick = tk.Entry(root, background="#a5e1f2", width=20,  textvariable=self.nick).pack(side = tk.LEFT)
+        
         #tk.Label(master = root, text = "Label").pack(side = tk.LEFT)
         #minimal_subscriber_publisher = MinimalPublisher_suscriber()
         print ("minimal_subscriber_publisher")
@@ -107,17 +108,11 @@ class Turtle_bot_interface(Node):
         
         print (f"x = {self.pos_x_total[-1]} y = {self.pos_y_total[-1]}, i= {len(self.pos_x_total)}")
         self.t.goto (self.poses_new[0], self.poses_new[1])
-        self.publisher()
+        
                 
-                
-    def publisher(self):
-        mapa = cv2.circle(self.mapa_base, (self.pos_x_total[-1],self.pos_y_total[-1]), radius=5, color=(0, 0, 255), thickness=-1) #color=(Blue,Green,Red)
-        self.mapa_base = mapa
-        self.publisher_.publish(self.br.cv2_to_imgmsg(self.mapa_base))
-        #display = Canvas()
-        #display.mover(poses_new)
     
-    def boton1(self,pose_new):
+    
+    def boton1(self):
         #t.forward(1)
         print ("boton1")
         thread = threading.Thread(target=rclpy.spin(self))
@@ -147,7 +142,7 @@ class Turtle_bot_interface(Node):
         pass
 
     def boton4(self):
-        print ("Boton 4")
+        print ("Guardar Teleop")
         scriptDir = filedialog.askdirectory()
         res =self.nick.get()
         lista = res.split(",")
