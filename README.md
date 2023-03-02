@@ -62,4 +62,8 @@ ros2 run turtle_bot_12 turtle_bot_interface
 
 # Punto 3
 
+Para guardar el recorrido, dentro del panel "File Name:<>" el usuario tiene dos opciones. Si no desea guardar unicamente debe escribir aca la palabra *no*. Sin embargo, si este desea guardar el archivo debe hacerlo con el siguinte formato: *Si,<nombre_archivo>*. Luego, una vez se tienen estas condiciones de frontera, el usuario debe dar click al boton de teleoperar para poder visualiar el movimiento del robot en la interfaz. Por último, para especificar o soleccionar la ruta deseada se debe dar click en *Guardar teleop*.
+
+Una vez se realizó este proceso, la interfaz replicara el movimiento bidimensiosal del entorno de Coppelia y guardar dicho recorrido con el nombre y ruta deseada. ¡Diviertase controlando el robot! :)
+
 # Punto 4
